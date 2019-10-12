@@ -1,3 +1,25 @@
+nav {
+  height: 70px;
+  text-align: right;
+  line-height: 24px;
+}
+nav label {
+  margin: 0 40px 0 0;
+  font-size: 24px;
+  line-height: 70px;
+}
+nav #openmenu {
+  display: none;
+}
+nav #menu {
+  margin: 0 30px 0 0;
+}
+nav a {
+  text-decoration: none;
+}
 
+body {
+  margin: 0px;
+}
 
 /*# sourceMappingURL=main.css.map */
