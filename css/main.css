@@ -1,20 +1,36 @@
-nav {
+header {
+  height: 60px;
+  z-index: 300;
+}
+header .mobburger {
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  Opacity: 0.5;
+}
+header nav {
   height: 70px;
   text-align: right;
   line-height: 24px;
 }
-nav label {
+header nav label {
   margin: 0 40px 0 0;
-  font-size: 24px;
+  font-size: 27px;
+  color: #00428a;
   line-height: 70px;
 }
-nav #openmenu {
+header nav #openmenu {
   display: none;
 }
-nav #menu {
+header nav #menu {
   margin: 0 30px 0 0;
 }
-nav a {
+header nav ul, header nav li {
+  list-style: none;
+}
+header nav a {
   text-decoration: none;
 }
 
