@@ -1,0 +1,79 @@
+section.aboutUs{
+    div.container-texto{
+        text-align: center;
+        color:$gray;  
+        
+        h2{
+            
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: $titulos;
+        }
+        p{
+            width: 50%;
+            margin: auto;
+            font-size:15px;
+            font-family: $parrafos;
+            padding-bottom: 60px;
+           
+
+            
+        }
+    }
+    div.container{
+        div.container-img{
+            
+           
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            
+        }
+    
+        div.container-info{
+            p{
+                font-size: 16px;
+                font-family: $parrafos;
+                line-height: 26px;
+            }
+        }
+        div.subcontainer{
+            
+            div.subcontainer-img{
+                display: inline-block;
+                width: 64px;
+                height: 64px;
+                border: 2px solid $azul;
+                border-radius: 50%;
+                position: relative;
+                    i{  
+                        color:$azul;
+                        position: absolute;
+                        left: 20px;
+                        bottom: 23px;
+                        font-size: 25px;
+                    }
+               
+            }
+            div.subcontainer-texto{
+                
+                h3{
+                    font-family: $titulos;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: $parrafos;
+                }
+        
+            }
+        }
+        
+    }
+
+
+    
+}

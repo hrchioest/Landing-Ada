@@ -99,6 +99,57 @@ section.intro div.container-intro div.intro-info div.intro-button button.button-
     text-align: left;
   }
 }
+section.aboutUs div.container-texto {
+  text-align: center;
+  color: #283d50;
+}
+section.aboutUs div.container-texto h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+section.aboutUs div.container-texto p {
+  width: 50%;
+  margin: auto;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 60px;
+}
+section.aboutUs div.container div.container-img img {
+  max-width: 100%;
+  height: auto;
+}
+section.aboutUs div.container div.container-info p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+}
+section.aboutUs div.container div.subcontainer div.subcontainer-img {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  position: relative;
+}
+section.aboutUs div.container div.subcontainer div.subcontainer-img i {
+  color: #007bff;
+  position: absolute;
+  left: 20px;
+  bottom: 23px;
+  font-size: 25px;
+}
+section.aboutUs div.container div.subcontainer div.subcontainer-texto h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+section.aboutUs div.container div.subcontainer div.subcontainer-texto p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   margin: 0;
 }
