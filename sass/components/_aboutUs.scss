@@ -26,7 +26,7 @@ section.aboutUs{
             
            
             img{
-                max-width: 100%;
+                width: 100%;
                 height: auto;
             }
             
@@ -40,7 +40,9 @@ section.aboutUs{
             }
         }
         div.subcontainer{
-            
+            div.subcontainer-texto{
+                display: inline-block;
+            }
             div.subcontainer-img{
                 display: inline-block;
                 width: 64px;
@@ -54,6 +56,9 @@ section.aboutUs{
                         left: 20px;
                         bottom: 23px;
                         font-size: 25px;
+                        &.fa{
+                            display: inline-block;
+                        }
                     }
                
             }
@@ -67,6 +72,7 @@ section.aboutUs{
                 p{
                     font-size: 14px;
                     font-family: $parrafos;
+                    display: block;
                 }
         
             }

@@ -47,35 +47,11 @@ section.intro{
             
                 button{
                     font-size: 14px;
-                    padding: 10px 32px;
-                    border-radius: 50px;
-                    margin: 0px 20px 20px 0px;
                     color: white;
                     line-height: 1.5;
                     font-weight: 700;
                     font-family: $parrafos;
-                    letter-spacing: 1px;
-                    &.button-left{
-                        background: $azul;
-                        border: 2px solid $azul;
-                        &:hover{
-                            background: $azulmed;
-                            border: 2px solid white;
-                            transition: .5s;
-                        }
-                    }
-                    &.button-right{
-                        background: $azulmed;
-                        border: 2px solid white;
-                        &:hover{
-                            background: $azul;
-                            border: 2px solid $azul;
-                            transition: .5s;
-                            
-                        }
-                    }
-                    
-
+                    letter-spacing: 1px;                   
                 }         
             }
                 

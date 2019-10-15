@@ -1,3 +1,27 @@
+.button {
+  padding: 10px 32px;
+  border-radius: 50px;
+  margin: 0px 20px 20px 0px;
+}
+.button.button-active {
+  background: #007bff;
+  border: 2px solid #007bff;
+}
+.button.button-active:hover {
+  background: #1445b3;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+.button.button-alternative {
+  background: #1445b3;
+  border: 2px solid white;
+}
+.button.button-alternative:hover {
+  background: #007bff;
+  border: 2px solid #007bff;
+  transition: 0.5s;
+}
+
 section.intro {
   background: #1445b3;
   width: 100%;
@@ -39,32 +63,11 @@ section.intro div.container-intro div.intro-info div.intro-button {
 }
 section.intro div.container-intro div.intro-info div.intro-button button {
   font-size: 14px;
-  padding: 10px 32px;
-  border-radius: 50px;
-  margin: 0px 20px 20px 0px;
   color: white;
   line-height: 1.5;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
-}
-section.intro div.container-intro div.intro-info div.intro-button button.button-left {
-  background: #007bff;
-  border: 2px solid #007bff;
-}
-section.intro div.container-intro div.intro-info div.intro-button button.button-left:hover {
-  background: #1445b3;
-  border: 2px solid white;
-  transition: 0.5s;
-}
-section.intro div.container-intro div.intro-info div.intro-button button.button-right {
-  background: #1445b3;
-  border: 2px solid white;
-}
-section.intro div.container-intro div.intro-info div.intro-button button.button-right:hover {
-  background: #007bff;
-  border: 2px solid #007bff;
-  transition: 0.5s;
 }
 
 @media (min-width: 576px) {
@@ -117,13 +120,16 @@ section.aboutUs div.container-texto p {
   padding-bottom: 60px;
 }
 section.aboutUs div.container div.container-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 section.aboutUs div.container div.container-info p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 26px;
+}
+section.aboutUs div.container div.subcontainer div.subcontainer-texto {
+  display: inline-block;
 }
 section.aboutUs div.container div.subcontainer div.subcontainer-img {
   display: inline-block;
@@ -140,6 +146,9 @@ section.aboutUs div.container div.subcontainer div.subcontainer-img i {
   bottom: 23px;
   font-size: 25px;
 }
+section.aboutUs div.container div.subcontainer div.subcontainer-img i.fa {
+  display: inline-block;
+}
 section.aboutUs div.container div.subcontainer div.subcontainer-texto h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -148,9 +157,14 @@ section.aboutUs div.container div.subcontainer div.subcontainer-texto h3 {
 section.aboutUs div.container div.subcontainer div.subcontainer-texto p {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  display: block;
 }
 
 body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
   margin: 0;
 }
 
