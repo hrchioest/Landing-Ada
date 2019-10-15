@@ -2,9 +2,15 @@ header {
   height: 60px;
   z-index: 300;
 }
+header img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 294;
+}
 header .mobburger {
   position: absolute;
-  z-index: -1;
+  z-index: 14;
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -44,6 +50,8 @@ header nav label {
 }
 header nav label .mobcerrado {
   color: #00428a;
+  z-index: 400;
+  position: relative;
 }
 header nav label .fas {
   color: white;
@@ -52,6 +60,7 @@ header nav label .fas {
 }
 header nav #openmenu {
   display: none;
+  /* &:checked .mobcerrado  { display: none; } &:checked .fas { display: inline-block; }*/
 }
 header nav #openmenu:checked + .mobmenu {
   width: 260px;
@@ -63,8 +72,12 @@ header nav #menu .dropuno, header nav #menu .dropdos {
   display: none;
 }
 header nav #menu .druno:hover .dropuno {
-  display: inline;
-  padding-left: 10px;
+  display: inline-block;
+  padding-left: 20px;
+}
+header nav #menu .drdos:hover .dropdos {
+  display: inline-block;
+  padding-left: 25px;
 }
 header nav ul, header nav li {
   list-style: none;
@@ -80,9 +93,7 @@ header nav a:hover {
   color: #74b5fc;
 }
 header nav a .fas {
-  font-size: 24px;
-  position: absolute;
-  right: 5px;
+  font-size: 18px;
 }
 @media (min-width: 990px) {
   header nav a {
