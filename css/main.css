@@ -22,28 +22,25 @@
   transition: 0.5s;
 }
 
-section.intro {
+.intro {
   background: #1445b3;
   width: 100%;
-  padding: 100px 0px 120px 0px;
+  padding: 90px 0px 50px 0px;
 }
-section.intro div.container-intro {
+.intro .container-intro {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
-section.intro div.container-intro div.intro-img {
+.intro .container-intro .intro-img {
   height: auto;
   width: 50%;
   margin: auto;
 }
-section.intro div.container-intro div.intro-img img {
+.intro .container-intro .intro-img img {
   max-width: 100%;
 }
-section.intro div.container-intro div.intro-info h2 {
-  font-size: 48px;
+.intro .container-intro .intro-info h2 {
+  font-size: 34px;
   line-height: 1.2;
   color: white;
   margin: auto;
@@ -52,16 +49,16 @@ section.intro div.container-intro div.intro-info h2 {
   padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
 }
-section.intro div.container-intro div.intro-info h2 span {
+.intro .container-intro .intro-info h2 span {
   text-decoration-line: underline;
   color: #74b5fc;
 }
-section.intro div.container-intro div.intro-info div.intro-button {
+.intro .container-intro .intro-info .intro-button {
   margin: auto;
   text-align: center;
   padding-bottom: 50px;
 }
-section.intro div.container-intro div.intro-info div.intro-button button {
+.intro .container-intro .intro-info .intro-button button {
   font-size: 14px;
   color: white;
   line-height: 1.5;
@@ -70,94 +67,104 @@ section.intro div.container-intro div.intro-info div.intro-button button {
   letter-spacing: 1px;
 }
 
-@media (min-width: 576px) {
-  section.intro div.container-intro {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  section.intro div.container-intro {
-    max-width: 720px;
-  }
-}
-@media (max-width: 767px) {
-  section.intro div.container-intro div.intro-info h2 {
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 991px) {
-  section.intro div.container-intro div.intro-img {
-    width: 80%;
-    margin: 0 auto 25px auto;
-  }
-}
-@media (min-width: 992px) {
-  section.intro div.container-intro {
+@media (min-width: 990px) {
+  .intro .container-intro {
     max-width: 960px;
     display: flex;
     flex-direction: row-reverse;
   }
-  section.intro div.container-intro div.intro-info h2, section.intro div.container-intro div.intro-info div.intro-button {
+  .intro .container-intro .intro-info h2 {
+    font-size: 48px;
+  }
+  .intro .container-intro .intro-info h2, .intro .container-intro .intro-info .intro-button {
     text-align: left;
   }
 }
-section.aboutUs div.container-texto {
-  text-align: center;
-  color: #283d50;
+.about {
+  padding: 50px 0px;
 }
-section.aboutUs div.container-texto h2 {
+.about .container-about {
+  text-align: center;
+}
+.about .container-about h2 {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  color: #283d50;
 }
-section.aboutUs div.container-texto p {
-  width: 50%;
+.about .container-about p {
+  width: 42%;
   margin: auto;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  color: #556877;
 }
-section.aboutUs div.container div.container-img img {
-  width: 100%;
+.about .container .container-img {
+  width: 75%;
+  margin: auto;
+}
+.about .container .container-img img {
+  max-width: 100%;
   height: auto;
 }
-section.aboutUs div.container div.container-info p {
+.about .container .container-subcontainer {
+  margin: 0px 80px 30px;
+}
+.about .container .container-subcontainer .container-info p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 26px;
+  color: #444;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-texto {
-  display: inline-block;
+.about .container .container-subcontainer .subcontainer {
+  padding-bottom: 30px;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-img {
-  display: inline-block;
+.about .container .container-subcontainer .subcontainer .subcontainer-img {
   width: 64px;
   height: 64px;
   border: 2px solid #007bff;
   border-radius: 50%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-img i {
+.about .container .container-subcontainer .subcontainer .subcontainer-img i {
   color: #007bff;
-  position: absolute;
-  left: 20px;
-  bottom: 23px;
   font-size: 25px;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-img i.fa {
-  display: inline-block;
+.about .container .container-subcontainer .subcontainer .subcontainer-texto {
+  padding-left: 80px;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-texto h3 {
+.about .container .container-subcontainer .subcontainer .subcontainer-texto h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  color: #283d50;
 }
-section.aboutUs div.container div.subcontainer div.subcontainer-texto p {
+.about .container .container-subcontainer .subcontainer .subcontainer-texto p {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   display: block;
+  line-height: 24px;
+  margin-top: 2px;
+  color: #444;
+}
+.about .container .container-texto {
+  margin: 30px 80px;
+}
+.about .container .container-texto h3 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
+}
+.about .container .container-texto p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
 }
 
 body {

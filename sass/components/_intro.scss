@@ -1,30 +1,24 @@
-
-section.intro{
+.intro{
     background: $azulmed;
     width: 100%;
-    padding: 100px 0px 120px 0px;
+    padding: 90px 0px 50px 0px;
 
-    div.container-intro{
+    .container-intro{
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-       
- 
-        div.intro-img{
+        margin: auto;
+    
+        .intro-img{
             height: auto;
             width: 50%;
             margin: auto;
             img{
                 max-width:100%;
-            }   
-            
+            }          
         }
-        div.intro-info{
+        .intro-info{
             
             h2{
-                font-size: 48px;
+                font-size: 34px;
                 line-height: 1.2;
                 color: white;
                 margin: auto;
@@ -32,19 +26,16 @@ section.intro{
                 text-align: center;
                 padding-bottom: 40px;
                 font-family: $titulos;
-
-            
+      
                 span{
                     text-decoration-line: underline;
                     color:$celeste;
-
                 }
             }
-            div.intro-button{
+            .intro-button{
                 margin: auto;
                 text-align: center;
-                padding-bottom: 50px;
-            
+                padding-bottom: 50px;     
                 button{
                     font-size: 14px;
                     color: white;
@@ -63,62 +54,24 @@ section.intro{
 
 
 
-@media(min-width:576px){
-    section.intro{
-        div.container-intro{
-            max-width: 540px;
-        }
-       
-    }
-}
-@media(min-width:768px){
-    section.intro{
-        div.container-intro{
-            max-width: 720px;
-        }
-            
-    }
-}
-@media(max-width:767px){    
-    section.intro{
-        div.container-intro{
-            div.intro-info{
-                h2{
-                    font-size: 34px;
-                    margin-bottom: 30px;
-                }
-            }    
 
-        }
-    }    
-}
-@media(max-width:991px){
-    section.intro{
-        div.container-intro{
-            div.intro-img{
-                width: 80%;
-                margin: 0 auto 25px auto;   
-            }
-        }
-    }
-}
-
-
-
-
-@media(min-width:992px){
-    section.intro{
-        div.container-intro{
+@include desktop{
+    .intro{
+        .container-intro{
             max-width: 960px;
             display: flex;
             flex-direction: row-reverse;
-            div.intro-info{
-                h2, div.intro-button{
+            .intro-info{
+                h2{
+                    font-size: 48px;
+                }
+                h2,.intro-button{
                     text-align: left;
                 }
-                
+         
             }
-        }
     
+        }
     }
+    
 }
