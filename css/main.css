@@ -167,6 +167,21 @@
   color: #444;
 }
 
+@media (min-width: 990px) {
+  .about .container {
+    display: flex;
+    widows: 100%;
+  }
+  .about .container .container-img {
+    width: 50%;
+  }
+  .about .container .container-subcontainer {
+    width: 50%;
+  }
+  .about .container .container-texto {
+    width: 50%;
+  }
+}
 body {
   margin: 0;
 }

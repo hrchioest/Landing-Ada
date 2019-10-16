@@ -24,7 +24,6 @@
     }
     .container{
        
-        
         .container-img{   
             width: 75%; 
             margin: auto;
@@ -105,7 +104,26 @@
         
 
     }
-
-
     
+}
+
+@include desktop{
+    .about{
+        .container{
+            display: flex;
+            widows: 100%;
+            .container-img{
+                width: 50%;
+
+            }
+            .container-subcontainer{
+                width: 50%;
+
+            }
+            .container-texto{
+                width: 50%;
+            }
+        }
+
+    }
 }
