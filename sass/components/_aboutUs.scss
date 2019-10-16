@@ -111,14 +111,12 @@
     .about{
         .container{
             display: flex;
-            widows: 100%;
+            flex-direction: row-reverse;
             .container-img{
                 width: 50%;
-
             }
             .container-subcontainer{
                 width: 50%;
-
             }
             .container-texto{
                 width: 50%;

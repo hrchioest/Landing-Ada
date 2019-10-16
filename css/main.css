@@ -170,7 +170,7 @@
 @media (min-width: 990px) {
   .about .container {
     display: flex;
-    widows: 100%;
+    flex-direction: row-reverse;
   }
   .about .container .container-img {
     width: 50%;
