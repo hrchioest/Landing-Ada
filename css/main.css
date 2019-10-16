@@ -122,6 +122,13 @@
 .about .container .container-subcontainer .subcontainer {
   padding-bottom: 30px;
 }
+.about .container .container-subcontainer .subcontainer:hover .subcontainer-img {
+  background: #007bff;
+}
+.about .container .container-subcontainer .subcontainer:hover .subcontainer-img i {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
 .about .container .container-subcontainer .subcontainer .subcontainer-img {
   width: 64px;
   height: 64px;
