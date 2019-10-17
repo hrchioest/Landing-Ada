@@ -2,7 +2,7 @@ header{
     z-index: 13;
    
 img{
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
     z-index: 294;
@@ -54,6 +54,10 @@ nav {
     
     text-align: right;
     line-height: 24px;
+    background-color:white;
+    position:fixed;
+    width: 100%;
+    z-index: 90;
 
     @include desktop {
       line-height: 20px;
