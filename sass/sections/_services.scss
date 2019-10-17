@@ -18,11 +18,18 @@
                 transition: all 0.3s ease-in-out;
                 position: relative;
                 overflow: hidden;
+                &:hover{
+                    h4{
+                        color:$azul;
+                        transition: 0.5s;
+                    }
+                }
                 
                 div{
                     display: inline-block;
                     position: absolute;
                     left: -8px;
+                    top: 24px;
                     i{
                         font-size: 64px; 
                     }

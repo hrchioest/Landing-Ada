@@ -386,10 +386,15 @@ header nav a .fas {
   position: relative;
   overflow: hidden;
 }
+.services .contenedor-services .contenedor-box .box:hover h4 {
+  color: #007bff;
+  transition: 0.5s;
+}
 .services .contenedor-services .contenedor-box .box div {
   display: inline-block;
   position: absolute;
   left: -8px;
+  top: 24px;
 }
 .services .contenedor-services .contenedor-box .box div i {
   font-size: 64px;
