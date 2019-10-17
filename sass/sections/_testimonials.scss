@@ -1,0 +1,15 @@
+
+.nombres
+{
+  font-family: $titulos;
+
+}
+
+.tcirculos
+{
+  color: $graydot;  
+  margin: 5px;
+  &:hover {
+      color: $azul;
+  }
+}

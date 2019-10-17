@@ -440,6 +440,14 @@ header nav a .fas {
     width: 33%;
   }
 }
+.tcirculos {
+  color: #ddd;
+  margin: 5px;
+}
+.tcirculos:hover {
+  color: #007bff;
+}
+
 body {
   margin: 0px;
 }
