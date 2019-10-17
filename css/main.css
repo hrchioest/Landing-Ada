@@ -1,4 +1,3 @@
-
 header {
   z-index: 13;
 }
@@ -171,9 +170,12 @@ header nav a .fas {
     margin: 0 15px 7px 15px;
   }
 }
-
 body {
   margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,77 @@
+.intro{
+    background: $azulmed;
+    width: 100%;
+    padding: 90px 0px 50px 0px;
+
+    .container-intro{
+        width: 100%;
+        margin: auto;
+    
+        .intro-img{
+            height: auto;
+            width: 50%;
+            margin: auto;
+            img{
+                max-width:100%;
+            }          
+        }
+        .intro-info{
+            
+            h2{
+                font-size: 34px;
+                line-height: 1.2;
+                color: white;
+                margin: auto;
+                box-sizing: border-box;
+                text-align: center;
+                padding-bottom: 40px;
+                font-family: $titulos;
+      
+                span{
+                    text-decoration-line: underline;
+                    color:$celeste;
+                }
+            }
+            .intro-button{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 50px;     
+                button{
+                    font-size: 14px;
+                    color: white;
+                    line-height: 1.5;
+                    font-weight: 700;
+                    font-family: $parrafos;
+                    letter-spacing: 1px;                   
+                }         
+            }
+                
+        
+        }   
+
+    }
+}
+
+
+
+
+@include desktop{
+    .intro{
+        .container-intro{
+            max-width: 960px;
+            display: flex;
+            flex-direction: row-reverse;
+            .intro-info{
+                h2{
+                    font-size: 48px;
+                }
+                h2,.intro-button{
+                    text-align: left;
+                }
+         
+            }
+    
+        }
+    }
+    
+}
