@@ -1,6 +1,5 @@
 header {
-  height: 60px;
-  z-index: 300;
+  z-index: 13;
 }
 header img {
   position: absolute;
@@ -9,42 +8,54 @@ header img {
   z-index: 294;
 }
 header .mobburger {
+  display: none;
   position: absolute;
-  z-index: 14;
+  z-index: 200;
   background-color: black;
   width: 100vw;
   height: 100vh;
   Opacity: 0.7;
 }
-header .mobmenu {
-  position: absolute;
-  top: 0px;
-  width: 0px;
-  height: 596px;
-  background-color: rgba(19, 39, 57, 0.8);
-  padding: 60px 0 0 0;
-  text-align: left;
-  transition: width 1s linear;
-  overflow: auto;
-  z-index: 299;
-}
-header .mobmenu .leftmob {
-  position: absolute;
-  left: 0px;
-}
 @media (min-width: 990px) {
-  header .mobmenu {
+  header .mobburger {
     display: none;
   }
 }
+header .mobmenu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 666px;
+  background-color: rgba(19, 39, 57, 0.8);
+  padding: 60px 0 0 0px;
+  text-align: left;
+  transition: width 0.5s linear;
+  overflow: auto;
+  z-index: 299;
+}
+@media (min-width: 990px) {
+  header .mobmenu {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 290;
+    overflow: visible;
+    padding: 0px;
+  }
+}
 header nav {
-  height: 70px;
   text-align: right;
   line-height: 24px;
 }
+@media (min-width: 990px) {
+  header nav {
+    line-height: 20px;
+  }
+}
 header nav label {
   margin: 0 30px 0 0;
-  font-size: 27px;
   line-height: 70px;
   z-index: 400;
 }
@@ -52,6 +63,12 @@ header nav label .mobcerrado {
   color: #00428a;
   z-index: 400;
   position: relative;
+  font-size: 27px;
+}
+@media (min-width: 990px) {
+  header nav label .mobcerrado {
+    display: none;
+  }
 }
 header nav label .fas {
   color: white;
@@ -65,22 +82,44 @@ header nav #openmenu {
 header nav #openmenu:checked + .mobmenu {
   width: 260px;
 }
+header nav #openmenu:checked ~ .mobburger {
+  display: block;
+}
 header nav #menu {
-  margin: 0 30px 0 0;
+  margin: 0 30px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 990px) {
+  header nav #menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 30px 15px;
+  }
 }
 header nav #menu .dropuno, header nav #menu .dropdos {
   display: none;
 }
 header nav #menu .druno:hover .dropuno {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
 }
 header nav #menu .drdos:hover .dropdos {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding-left: 25px;
 }
-header nav ul, header nav li {
-  list-style: none;
+header nav .decodes {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  transition: display 1s linear;
+}
+@media (min-width: 990px) {
+  header nav .decodes {
+    color: #00428a;
+  }
 }
 header nav a {
   text-decoration: none;

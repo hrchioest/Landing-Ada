@@ -1,6 +1,5 @@
 header{
-    height: 60px;
-    z-index: 300;
+    z-index: 13;
    
 img{
     position: absolute;
@@ -10,44 +9,59 @@ img{
    
 }
 .mobburger{
+display: none;
 position: absolute;   
-z-index: 14;
+z-index: 200;
 background-color: black;
 width: 100vw;
 height: 100vh;
 Opacity: 0.7;
+
+@include desktop {
+  display: none;
+}
 }
 
 .mobmenu{
  position: absolute;
  top: 0px;
+ left: 0px;   
  width: 0px;
- height: 596px;
+ height: 666px;
  background-color: rgba(19, 39, 57, 0.8);   
- padding: 60px 0 0 0;
+ padding: 60px 0 0 0px;
  text-align: left;
- transition: width 1s linear;
+ transition: width 0.5s linear;
  overflow: auto;
  z-index: 299;
-
- .leftmob
- {
-    position: absolute;
-    left: 0px;   
- }
+ 
  @include desktop {
-    display:none;
+  
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 290;
+    overflow: visible;
+    padding: 0px;
+    
+
 }
 
 }
 
 nav {
-    height: 70px;
+    
     text-align: right;
     line-height: 24px;
 
+    @include desktop {
+      line-height: 20px;
+        
+    
+    }
+
     label{ margin: 0 30px 0 0;
-    font-size: 27px;
     line-height: 70px;
     z-index: 400;
  
@@ -55,6 +69,10 @@ nav {
     color: $azulosc;
     z-index: 400;
     position: relative;
+    font-size: 27px;
+    @include desktop {
+      display: none;
+    }
     
   } 
   .fas{
@@ -71,29 +89,54 @@ nav {
     {
      width: 260px;  
     }
+    &:checked ~ .mobburger
+    {
+      display: block;
+    }
+   
 }
 #menu{
-    margin: 0 30px 0 0;    
+    margin: 0 30px 0 20px;    
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 30px 15px;
+    
+    }
     
    .dropuno,.dropdos{
        display: none;
+     
 } 
 
 .druno:hover  .dropuno{
-  display: inline-block;
-
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
 }
 
 .drdos:hover  .dropdos{
-    display: inline-block;
+  display: flex;
+  flex-direction: column;
     padding-left: 25px;
   }
 }
-ul,li{
-    list-style: none;
-   
+
+
+.decodes{
+  
+  font-family: $parrafos;
+  color: white;
+  font-size: 16px;
+  transition: display 1s linear;
+  @include desktop {
+    color: $azulosc;
 }
+}
+   
+
    a{
    
       text-decoration: none;
