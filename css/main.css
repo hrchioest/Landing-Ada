@@ -440,11 +440,62 @@ header nav a .fas {
     width: 33%;
   }
 }
-.tcirculos {
+@media (min-width: 990px) {
+  .testi {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 990px) {
+  .testi .monials {
+    height: 180px;
+    width: 610px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+  }
+  .testi .monials .infomonials {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 0 0 15px;
+  }
+  .testi .monials .infomonials p {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 70px;
+  }
+  .testi .monials img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.testi .nombres {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.testi .ceo {
+  color: #999;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.testi .descrip {
+  font-style: italic;
+}
+.testi .testimg {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.testi .tcirculos {
   color: #ddd;
   margin: 5px;
 }
-.tcirculos:hover {
+.testi .tcirculos:hover {
   color: #007bff;
 }
 
