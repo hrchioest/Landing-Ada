@@ -198,23 +198,71 @@
   line-height: 1.5;
 }
 .services .contenedor-services .contenedor-box .box {
-  border: 1px solid white;
   background: white;
   border-radius: 10px;
   margin: auto;
-  max-width: 70%;
+  max-width: 53%;
   margin-bottom: 40px;
-  padding: 10px 20px;
+  padding: 10px 10px 20px 75px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.services .contenedor-services .contenedor-box .box div {
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+}
+.services .contenedor-services .contenedor-box .box div i {
+  font-size: 64px;
 }
 .services .contenedor-services .contenedor-box .box h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  padding-top: 16px;
+  color: #283d50;
 }
 .services .contenedor-services .contenedor-box .box p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  color: #444;
 }
 
+.red {
+  color: #ff689b;
+}
+
+.yellow {
+  color: #e9bf06;
+}
+
+.lightblue {
+  color: #3fcdc7;
+}
+
+.green {
+  color: #41cf2e;
+}
+
+.yellowlight {
+  color: #d6ff22;
+}
+
+.skyblue {
+  color: #4680ff;
+}
+
+@media (min-width: 990px) {
+  .services .contenedor-services .contenedor-box {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .services .contenedor-services .contenedor-box .box {
+    width: 33%;
+  }
+}
 body {
   margin: 0;
 }
