@@ -1,3 +1,31 @@
 .services{
+    width: 100%;
     background: $celesteclaro;
+    .contenedor-services{
+        .contenedor-box{
+          
+            font-weight: 400;
+            line-height: 1.5;
+            .box{
+                border:1px solid white;
+                background: white;
+                border-radius: 10px;
+                margin: auto;
+                max-width: 70%;
+                margin-bottom: 40px;
+                padding: 10px 30px 30px 30px;
+            
+
+                h4{
+                    font-family:$titulos;
+                    font-size:18px;
+                
+                }
+                p{
+                    font-family:$parrafos;
+                    font-size:14px;
+                }
+            }
+        }
+    }
 }

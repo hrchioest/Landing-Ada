@@ -83,10 +83,10 @@
 .about {
   padding: 50px 0px;
 }
-.about .container-about {
+.about .container-principal {
   text-align: center;
 }
-.about .container-about h2 {
+.about .container-principal h2 {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
@@ -94,7 +94,7 @@
   padding: 10px;
   color: #283d50;
 }
-.about .container-about p {
+.about .container-principal p {
   width: 42%;
   margin: auto;
   font-size: 15px;
@@ -189,6 +189,32 @@
     width: 50%;
   }
 }
+.services {
+  width: 100%;
+  background: #ecf5ff;
+}
+.services .contenedor-services .contenedor-box {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.services .contenedor-services .contenedor-box .box {
+  border: 1px solid white;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 70%;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+.services .contenedor-services .contenedor-box .box h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.services .contenedor-services .contenedor-box .box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
 body {
   margin: 0;
 }
