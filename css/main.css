@@ -94,21 +94,50 @@ header nav #menu {
   header nav #menu {
     flex-direction: row;
     justify-content: flex-end;
-    margin: 30px 15px;
+    margin: 30px 50px;
   }
 }
 header nav #menu .dropuno, header nav #menu .dropdos {
   display: none;
+}
+@media (min-width: 990px) {
+  header nav #menu .dropuno, header nav #menu .dropdos {
+    background-color: white;
+    box-shadow: 1px 1px 2px gray;
+    transition: all 2s linear;
+  }
 }
 header nav #menu .druno:hover .dropuno {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
 }
+@media (min-width: 990px) {
+  header nav #menu .druno:hover .dropuno {
+    position: relative;
+    padding-left: 5px;
+    width: 130px;
+  }
+}
+header nav #menu .druno:hover .colorun {
+  color: #74b5fc;
+}
 header nav #menu .drdos:hover .dropdos {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
+}
+@media (min-width: 990px) {
+  header nav #menu .drdos:hover .dropdos {
+    position: absolute;
+    left: 135px;
+    top: 25px;
+    width: 140px;
+    padding-left: 10px;
+  }
+}
+header nav .drdos:hover .colordo {
+  color: #74b5fc;
 }
 header nav .decodes {
   font-family: "Open Sans", sans-serif;
@@ -119,6 +148,7 @@ header nav .decodes {
 @media (min-width: 990px) {
   header nav .decodes {
     color: #00428a;
+    margin-left: 14px;
   }
 }
 header nav a {
@@ -137,6 +167,7 @@ header nav a .fas {
 @media (min-width: 990px) {
   header nav a {
     color: #00428a;
+    margin: 0 15px 7px 15px;
   }
 }
 
