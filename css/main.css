@@ -422,7 +422,7 @@ header nav a .fas {
   color: #41cf2e;
 }
 
-.yellowlight {
+.lightyellow {
   color: #d6ff22;
 }
 
@@ -440,6 +440,13 @@ header nav a .fas {
     width: 33%;
   }
 }
+.whychoose {
+  background: #004a99;
+}
+.whychoose .container-principal .titulo, .whychoose .container-principal .parrafo {
+  color: white;
+}
+
 body {
   margin: 0px;
 }

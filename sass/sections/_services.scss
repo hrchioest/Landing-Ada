@@ -45,22 +45,22 @@
 }
 
 .red{
-    color:#ff689b;
+    color:$red;
 }
 .yellow{
-   color: #e9bf06; 
+    color:$yellow;
 }
 .lightblue{
-    color:#3fcdc7;
+    color:$lightblue;
 }
 .green{
-    color:#41cf2e;
+    color:$green;
 }
-.yellowlight{
-    color: #d6ff22;
+.lightyellow{
+    color:$lightyellow;
 }
 .skyblue{
-    color: #4680ff;
+    color:$skyblue;
 }
 
 @include desktop{
