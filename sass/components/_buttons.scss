@@ -8,7 +8,7 @@
         &:hover{
             background: $azulmed;
             border: 2px solid white;
-            transition: .5s;
+            transition:  .5s;
         }
     }
     &.button-alternative{
@@ -21,6 +21,15 @@
             
         }
     }
-    
-
-}  
+    &.button-mini{
+        color:$azul;
+        background-color:$celesteclaro;
+        padding: 6px 20px;
+        margin: 5px 0px 5px;
+        &.activo{
+            color:white;
+            background-color:$azul;
+        }
+    }
+}   
+ 
