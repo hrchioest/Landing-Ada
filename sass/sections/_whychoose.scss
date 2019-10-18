@@ -1,16 +1,11 @@
 .whychoose{
     background: $azulopaco;
     
-    .conten-texto{
-        margin-bottom: 20px;
-        .titulo-card{
-            padding: 16px;
-        }
-        .titulo-card,.parrafo{
-            color:white;
-            line-height: 1.2;
-        }
+    .titulo, .parrafo{
+        color:white;
+        line-height: 1.2;
     }
+
     .contenedor-card{
         .card{
             background-color: $azulcard;
