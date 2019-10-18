@@ -1,9 +1,107 @@
 .whychoose{
     background: $azulopaco;
-    .container-principal{
-        .titulo, .parrafo{
-         color:white;
+    
+    .conten-texto{
+        margin-bottom: 20px;
+        .titulo-card{
+            padding: 16px;
         }
+        .titulo-card,.parrafo{
+            color:white;
+            line-height: 1.2;
+        }
+    }
+    .contenedor-card{
+        .card{
+            background-color: $azulcard;
+            border-color: $azulcard;
+            width: 70%;
+            margin: auto;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            font-family: $parrafos;
+            margin-bottom: 23px;
+            border-radius: 10px;
+            line-height: 1.5;
         
+            .contenedor-img{
+                width: 100%;
+                i{
+                    color:$celestelight;
+                    font-size: 48px;
+                }           
+            }
+            h4{
+                font-family: $titulos;
+                font-size: 22px;
+                padding: 15px 0px 3px;
+            }
+            p{
+                font-size: 15px;
+                color: $celestelight;
+                line-height: 1.5;
+            }
+            a{
+                color: #fff;
+                font-weight: 600;
+                display: inline-block;
+                transition: 0.3s ease-in-out;
+                border-bottom: $azulcard solid 2px;
+            }
+        
+        }
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 24px 0px 0px 20px;
+        padding-bottom: 13px;
+
+        .content-num{
+            width: 45%;
+            text-align: center;
+
+            
+            span{
+                font-weight: bold;
+                font-size: 48px;
+                font-family: $titulos;
+                color: #fff;
+            
+                
+            }
+            p{
+                padding: 0;
+                margin: 0 0 20px 0;
+                font-size: 14px;
+                color:$celesteclaro;
+                font-family: $parrafos;
+                
+            }
+        
+        }
+    }
+}
+
+@include desktop{
+    .whychoose{
+        .contenedor-card{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+            .card{
+                width: 26%;
+            }
+        }
+        .content{
+            justify-content: center;
+            .content-num{
+                width: 20%;
+                padding: 14px;
+            }
+        }
     }
 }

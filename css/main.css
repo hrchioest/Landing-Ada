@@ -403,7 +403,7 @@ header nav a .fas {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding-top: 16px;
-  color: #283d50;
+  color: #111;
 }
 .services .contenedor-services .contenedor-box .box p {
   font-family: "Open Sans", sans-serif;
@@ -448,10 +448,96 @@ header nav a .fas {
 .whychoose {
   background: #004a99;
 }
-.whychoose .container-principal .titulo, .whychoose .container-principal .parrafo {
+.whychoose .conten-texto {
+  margin-bottom: 20px;
+}
+.whychoose .conten-texto .titulo-card {
+  padding: 16px;
+}
+.whychoose .conten-texto .titulo-card, .whychoose .conten-texto .parrafo {
   color: white;
+  line-height: 1.2;
+}
+.whychoose .contenedor-card .card {
+  background-color: #00458f;
+  border-color: #00458f;
+  width: 70%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 23px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+.whychoose .contenedor-card .card .contenedor-img {
+  width: 100%;
+}
+.whychoose .contenedor-card .card .contenedor-img i {
+  color: #d8eafe;
+  font-size: 48px;
+}
+.whychoose .contenedor-card .card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding: 15px 0px 3px;
+}
+.whychoose .contenedor-card .card p {
+  font-size: 15px;
+  color: #d8eafe;
+  line-height: 1.5;
+}
+.whychoose .contenedor-card .card a {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
+}
+.whychoose .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0px 0px 20px;
+  padding-bottom: 13px;
+}
+.whychoose .content .content-num {
+  width: 45%;
+  text-align: center;
+}
+.whychoose .content .content-num span {
+  font-weight: bold;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.whychoose .content .content-num p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #ecf5ff;
+  font-family: "Open Sans", sans-serif;
 }
 
+@media (min-width: 990px) {
+  .whychoose .contenedor-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
+  .whychoose .contenedor-card .card {
+    width: 26%;
+  }
+  .whychoose .content {
+    justify-content: center;
+  }
+  .whychoose .content .content-num {
+    width: 20%;
+    padding: 14px;
+  }
+}
 body {
   margin: 0px;
 }
