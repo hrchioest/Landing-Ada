@@ -16,7 +16,9 @@
         align-items: center;
         justify-content: center;
         color: white;
-        overflow: hidden;     
+        overflow: hidden;  
+        margin: 10px; 
+    
         @include desktop{
          width: 210px;
          height: 210px;
