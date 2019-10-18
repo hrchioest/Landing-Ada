@@ -84,19 +84,25 @@
 
 @include desktop{
     .about{
-        .container{
+        .subcontainer-principal{
             display: flex;
             flex-direction: row-reverse;
             .container-img{
                 width: 50%;
             }
-            .container-subcontainer{
+            .container-subcontainer{    
                 width: 50%;
             }
             .container-texto{
                 width: 50%;
             }
+            
         }
+        .subcontainer-princ{
+            display: flex;
+            flex-direction:row;
 
+        }
+       
     }
 }

@@ -573,18 +573,22 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
-  .about .container {
+  .about .subcontainer-principal {
     display: flex;
     flex-direction: row-reverse;
   }
-  .about .container .container-img {
+  .about .subcontainer-principal .container-img {
     width: 50%;
   }
-  .about .container .container-subcontainer {
+  .about .subcontainer-principal .container-subcontainer {
     width: 50%;
   }
-  .about .container .container-texto {
+  .about .subcontainer-principal .container-texto {
     width: 50%;
+  }
+  .about .subcontainer-princ {
+    display: flex;
+    flex-direction: row;
   }
 }
 .services {
