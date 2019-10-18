@@ -24,7 +24,11 @@
             margin-bottom: 23px;
             border-radius: 10px;
             line-height: 1.5;
-        
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background:$azulcardh;
+                border-color: $azulcardh;
+            }
             .contenedor-img{
                 width: 100%;
                 i{
@@ -49,7 +53,6 @@
                 transition: 0.3s ease-in-out;
                 border-bottom: $azulcard solid 2px;
             }
-        
         }
     }
     .content{
@@ -58,27 +61,22 @@
         flex-wrap: wrap;
         padding: 24px 0px 0px 20px;
         padding-bottom: 13px;
-
         .content-num{
             width: 45%;
             text-align: center;
-
-            
+            padding-bottom: 10px; 
             span{
                 font-weight: bold;
                 font-size: 48px;
                 font-family: $titulos;
-                color: #fff;
-            
-                
+                color: #fff;  
             }
             p{
                 padding: 0;
                 margin: 0 0 20px 0;
                 font-size: 14px;
                 color:$celesteclaro;
-                font-family: $parrafos;
-                
+                font-family: $parrafos;         
             }
         
         }

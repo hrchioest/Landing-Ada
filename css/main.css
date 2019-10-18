@@ -470,6 +470,11 @@ header nav a .fas {
   margin-bottom: 23px;
   border-radius: 10px;
   line-height: 1.5;
+  transition: 0.3s ease-in-out;
+}
+.whychoose .contenedor-card .card:hover {
+  background: #003b7a;
+  border-color: #003b7a;
 }
 .whychoose .contenedor-card .card .contenedor-img {
   width: 100%;
@@ -505,6 +510,7 @@ header nav a .fas {
 .whychoose .content .content-num {
   width: 45%;
   text-align: center;
+  padding-bottom: 10px;
 }
 .whychoose .content .content-num span {
   font-weight: bold;
