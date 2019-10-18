@@ -1,11 +1,16 @@
 @import 'mixins.scss';
 @import 'variables.scss';
 @import '../components/buttons';
+@import '../components/texts';
 @import '../components/cards';
+@import '../components/containers';
 @import '../sections/header';
-@import '../components/intro';
-@import '../components/aboutUs';
-@import '../components/services';
 @import '../sections/testimonials';
 @import '../sections/team';
 @import '../sections/ourclients';
+@import '../sections/intro';
+@import '../sections/aboutus';
+@import '../sections/services';
+@import '../sections/whychoose';
+@import '../sections/portafolio';
+

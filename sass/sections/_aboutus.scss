@@ -1,0 +1,102 @@
+.about{
+       
+    .container-img{   
+        width: 75%; 
+        margin: auto;
+        img{
+            max-width: 100%;    
+            height: auto;
+        }      
+    }
+    .container-subcontainer{
+        margin: 0px 80px 30px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color:$grayp;
+        }
+        
+        .subcontainer{
+            
+            padding-bottom: 30px;
+            &:hover{
+                .subcontainer-img{
+                    background: $azul;
+                    i{
+                        color:white;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                }
+            } 
+            .subcontainer-img{
+                
+                width: 64px;
+                height: 64px;
+                border: 2px solid $azul;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                    
+                    i{  
+                        color:$azul;
+                        font-size: 25px;
+                    }  
+            }
+            .subcontainer-texto{
+                padding-left: 80px;
+            
+                h3{
+                    font-family: $titulos;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color:$grayt;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: $parrafos;
+                    display: block;
+                    line-height: 24px;
+                    margin-top: 2px;
+                    color:$grayp
+                }
+        
+            }
+        }
+    }
+    .container-texto{
+        margin: 30px 80px;
+        h3{
+            font-size: 24px;
+            font-family: $titulos;
+            color:$grayt;
+        }
+        p{
+            font-size: 16px;
+            font-family: $parrafos;
+            color:$grayp;
+        }
+
+    }
+}
+
+@include desktop{
+    .about{
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            .container-img{
+                width: 50%;
+            }
+            .container-subcontainer{
+                width: 50%;
+            }
+            .container-texto{
+                width: 50%;
+            }
+        }
+
+    }
+}
