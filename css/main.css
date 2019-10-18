@@ -85,6 +85,12 @@
   text-align: center;
 }
 
+.fixthing {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
 header {
   z-index: 13;
 }
@@ -260,6 +266,179 @@ header nav a .fas {
     color: #00428a;
     margin: 0 15px 7px 15px;
   }
+}
+
+@media (min-width: 990px) {
+  .testi {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 990px) {
+  .testi .monials {
+    height: 180px;
+    width: 610px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+  }
+  .testi .monials .infomonials {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 0 0 15px;
+  }
+  .testi .monials .infomonials p {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 70px;
+  }
+  .testi .monials img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.testi .nombres {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.testi .ceo {
+  color: #999;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.testi .descrip {
+  font-style: italic;
+}
+.testi .testimg {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.testi .tcirculos {
+  color: #ddd;
+  margin: 5px;
+}
+.testi .tcirculos:hover {
+  color: #007bff;
+}
+
+.team {
+  width: 100%;
+  background: white;
+  padding: 50px 0px;
+  box-shadow: 2px 1px 1px grey;
+}
+.team .batmen {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.team .batman {
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  margin: 10px;
+}
+@media (min-width: 990px) {
+  .team .batman {
+    width: 210px;
+    height: 210px;
+  }
+}
+.team .batman:hover .hovblu {
+  display: flex;
+}
+.team .batman h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.team .batman span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+.team .batman i {
+  font-size: 18px;
+  margin: 10px 10px 0 0;
+}
+.team .batman i:hover {
+  color: #1445b3;
+}
+.team .batman .hovblu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: all 2s linear;
+}
+.team .bat1 {
+  background-image: url("../img/team-01.jpg");
+  background-size: 100%;
+}
+.team .bat2 {
+  background-image: url("../img/team-02.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+.team .bat3 {
+  background-image: url("../img/team-03.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+.team .bat4 {
+  background-image: url("../img/team-04.jpg");
+  background-size: 100%;
+}
+
+.clientescont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 720px;
+}
+@media (min-width: 990px) {
+  .clientescont {
+    max-width: 1100px;
+    padding: auto;
+    justify-content: center;
+  }
+}
+.clientescont .clientes {
+  background-color: white;
+  width: 230px;
+  height: 160px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 990px) {
+  .clientescont .clientes {
+    max-width: 600px;
+  }
+}
+.clientescont .clientes img {
+  width: 100px;
+  transition: all 0.4s ease-in-out;
+}
+.clientescont .clientes img:hover {
+  width: 120px;
 }
 
 .intro {
@@ -561,7 +740,6 @@ header nav a .fas {
   text-align: center;
   font-weight: 500;
 }
-
 
 body {
   margin: 0px;
