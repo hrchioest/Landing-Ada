@@ -451,7 +451,7 @@ header nav a .fas {
 .intro {
   background: #1445b3;
   width: 100%;
-  padding: 90px 0px 50px 0px;
+  padding-top: 129px;
 }
 .intro .container-intro {
   width: 100%;
@@ -459,7 +459,7 @@ header nav a .fas {
 }
 .intro .container-intro .intro-img {
   height: auto;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .intro .container-intro .intro-img img {
@@ -494,10 +494,17 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .intro {
+    padding-top: 200px;
+  }
   .intro .container-intro {
-    max-width: 960px;
+    max-width: 1115px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+  }
+  .intro .container-intro .intro-img {
+    padding: 0 0 97px 102px;
+    width: 50%;
   }
   .intro .container-intro .intro-info h2 {
     font-size: 48px;
