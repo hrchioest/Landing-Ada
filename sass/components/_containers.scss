@@ -5,7 +5,11 @@
         width: 42%;
         margin: auto;
         text-align: center;
+        &.full{
+            width: 100%;
+        }
     }
+
 }
 
 .fixthing{
