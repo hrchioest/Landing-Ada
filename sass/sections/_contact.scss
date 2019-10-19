@@ -17,3 +17,35 @@
 .datos{
     height: 30px;
 }
+
+.mapacont{
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+
+.mapa{
+     
+     height: 100%;
+     width: 90%;
+        border: none;
+}
+}
+
+.infomapa{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    i{
+        margin-right: 10px;
+    }
+    
+    
+    .iconotextomapa{
+        width: 200px;
+
+    }
+
+    
+}
