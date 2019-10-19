@@ -753,9 +753,6 @@ header nav a .fas {
   background-color: #007bff;
 }
 .portafolio .cont-cards {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   width: 80%;
   margin: auto;
 }
@@ -763,6 +760,8 @@ header nav a .fas {
   overflow: hidden;
   height: 250px;
   position: relative;
+  border-radius: 6px;
+  margin: 0 5px 27px 20px;
 }
 .portafolio .cont-cards .cont-card img {
   width: 100%;
@@ -776,17 +775,71 @@ header nav a .fas {
   top: 0;
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 .portafolio .cont-cards .cont-card .cont-capa .capa {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 {
+  padding-bottom: 8px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  line-height: 1px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 span {
+  color: #e2effe;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div {
+  font-size: 46px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon {
+  border-radius: 50%;
+  background: #007bff;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
 }
 .portafolio .cont-cards .cont-card:hover > .cont-capa {
   visibility: visible;
 }
 
+@media (min-width: 990px) {
+  .portafolio .cont-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portafolio .cont-cards .cont-card {
+    width: 30%;
+  }
+}
 body {
   margin: 0px;
 }

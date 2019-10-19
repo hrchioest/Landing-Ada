@@ -9,15 +9,15 @@
         }
     }
    .cont-cards{
-       display:flex;
-       flex-direction: column;
-       align-content: center;
         width: 80%;
         margin: auto;
         .cont-card{
             overflow: hidden;
             height: 250px;
-            position: relative;                
+            position: relative;
+            border-radius: 6px;
+            margin: 0 5px 27px 20px;
+                   
             img{
                 width: 100%;
                 height: 100%;
@@ -29,12 +29,65 @@
                 position: absolute;
                 top: 0;
                 width: 100%;
-                height: 100%;                
+                height: 100%;
+                border-radius: 6px;
+                
                 .capa{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
+
                     height: 100%;
+                    h4{
+                        padding-bottom: 8px;
+                       
+                        a{
+                            font-size: 22px;
+                            color: white;
+                            text-decoration: none;
+                            line-height: 1px;
+                            font-weight: 700;
+                            font-family: $titulos;
+                        }
+                        span{
+                            color: #e2effe;
+                            font-weight: 500;
+                            font-size: 14px;
+                            font-weight: 500;
+                            display: block;
+                            text-align: center;
+                            font-family: $parrafos; 
+                            margin-top: 5px;
+                            
+                            
+                        }
+                    }
+                    div{
+                        font-size: 46px;
+                        .cont-icon{
+                            border-radius: 50%;
+                            background: $azul;
+                            width: 36px;
+                            height: 36px;
+                            position: relative;
+                            line-height: 1;
+                            text-align: center;
+                            display: inline-block;
+                            box-sizing: border-box;
+    
+                            i{  
+                                padding-top: 6px;
+                                font-size: 22px;
+                                color: #fff;
+                                position:absolute;
+                                left: 10px;
+                            }
+    
+                        } 
+
+                    }            
+                    
                 }
             }
             &:hover>.cont-capa{
@@ -42,10 +95,18 @@
             }
         }
     }
-   
 }
 
 @include desktop{
-
-
+    .portafolio{
+        .cont-cards{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            .cont-card{
+                width: 30%;
+            }
+        }
+    }
 }
+
