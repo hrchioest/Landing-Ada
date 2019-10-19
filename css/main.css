@@ -32,6 +32,17 @@
   background-color: #007bff;
 }
 
+.button-msj {
+  background-color: #007bff;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 40px;
+  padding-top: 7px;
+  border: none;
+  cursor: pointer;
+}
+
 .titulo {
   font-size: 36px;
   font-weight: 500;
@@ -89,6 +100,13 @@
   width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.contenedorblanco {
+  width: 100%;
+  background: white;
+  padding: 50px 0px;
+  box-shadow: 2px 1px 1px grey;
 }
 
 header {
@@ -745,6 +763,25 @@ header nav a .fas {
   font-size: 36px;
   text-align: center;
   font-weight: 500;
+}
+
+.datacontacto {
+  color: #283d50;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.dataicon {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.contactform {
+  max-width: 930px;
+}
+
+.datos {
+  height: 30px;
 }
 
 body {

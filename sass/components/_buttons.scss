@@ -2,6 +2,9 @@
     padding: 10px 32px;
     border-radius: 50px;
     margin: 0px 20px 20px 0px;
+
+    
+
     &.button-active{
         background: $azul;
         border: 2px solid $azul;
@@ -29,7 +32,20 @@
         &.activo{
             color:white;
             background-color:$azul;
+
+
+            
         }
     }
 }   
  
+.button-msj{
+    background-color: $azul;
+    color: white;
+    font-family: $parrafos;
+    font-size: 16px;
+    height: 40px;
+    padding-top: 7px;
+    border: none;
+    cursor: pointer;
+}
