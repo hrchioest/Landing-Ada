@@ -41,6 +41,12 @@
   padding-top: 7px;
   border: none;
   cursor: pointer;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+.button-msj:hover {
+  background-color: #004a99;
 }
 
 .titulo {
@@ -287,6 +293,9 @@ header nav a .fas {
   }
 }
 
+.testi {
+  background: #ecf5ff;
+}
 @media (min-width: 990px) {
   .testi {
     display: flex;
@@ -419,6 +428,10 @@ header nav a .fas {
 .team .bat4 {
   background-image: url("../img/team-04.jpg");
   background-size: 100%;
+}
+
+.oclients {
+  background: #ecf5ff;
 }
 
 .clientescont {
@@ -775,8 +788,15 @@ header nav a .fas {
   font-size: 30px;
 }
 
-.contactform {
-  max-width: 930px;
+.formcontact {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.formcontact .contactform {
+  width: 97%;
+  margin: 5px 10px 5px 10px;
 }
 
 .datos {
@@ -786,11 +806,10 @@ header nav a .fas {
 .mapacont {
   width: 100%;
   height: 300px;
-  padding: 15px;
 }
 .mapacont .mapa {
   height: 100%;
-  width: 90%;
+  width: 97%;
   border: none;
 }
 
@@ -798,12 +817,21 @@ header nav a .fas {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  text-align: initial;
 }
 .infomapa i {
   margin-right: 10px;
 }
 .infomapa .iconotextomapa {
   width: 200px;
+  padding: 10px 0 20px 0;
+}
+
+@media (min-width: 990px) {
+  .contactglobal {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 body {

@@ -48,4 +48,10 @@
     padding-top: 7px;
     border: none;
     cursor: pointer;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        background-color: $azulopaco;
+    }
 }
