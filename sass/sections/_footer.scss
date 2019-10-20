@@ -1,0 +1,32 @@
+footer{
+    background: $azulopaco;
+    color:#fff;
+    .content-general{
+        width: 80%;
+        margin: auto;
+        .cont-wayne{
+            
+            h3{
+                font-size: 34px;
+                font-family: $titulos;
+                font-weight: 400;
+                letter-spacing: 3px;
+            }
+            p{
+                font-size: 13px;
+                line-height: 24px;
+                font-family: $titulos;
+            }
+        }
+        .useful{
+            font-size: 14px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .container-copycredi{
+            background:$azulosc;
+            
+        }
+    }
+}
