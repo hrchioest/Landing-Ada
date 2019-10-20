@@ -795,7 +795,7 @@ header nav a .fas {
   align-items: center;
 }
 .formcontact .contactform {
-  width: 97%;
+  width: 95%;
   margin: 5px 10px 5px 10px;
 }
 
@@ -806,6 +806,11 @@ header nav a .fas {
 .mapacont {
   width: 100%;
   height: 300px;
+}
+@media (min-width: 990px) {
+  .mapacont {
+    width: 60%;
+  }
 }
 .mapacont .mapa {
   height: 100%;
@@ -819,6 +824,11 @@ header nav a .fas {
   justify-content: space-evenly;
   text-align: initial;
 }
+@media (min-width: 990px) {
+  .infomapa {
+    flex-flow: row nowrap;
+  }
+}
 .infomapa i {
   margin-right: 10px;
 }
@@ -826,11 +836,35 @@ header nav a .fas {
   width: 200px;
   padding: 10px 0 20px 0;
 }
+@media (min-width: 990px) {
+  .infomapa .iconotextomapa {
+    padding: 10px 0 20px 15px;
+  }
+}
 
 @media (min-width: 990px) {
   .contactglobal {
     display: flex;
     flex-direction: row;
+  }
+  .contactglobal .txtarea {
+    height: 132px;
+    margin-bottom: 20px;
+  }
+}
+
+.nameyemail {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 990px) {
+  .nameyemail {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+  }
+  .nameyemail .contactnombre {
+    margin-right: 0px;
   }
 }
 
