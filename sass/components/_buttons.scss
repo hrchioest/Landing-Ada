@@ -24,8 +24,11 @@
     &.button-mini{
         color:$azul;
         background-color:$celesteclaro;
+        border: 1px solid $celesteclaro;
         padding: 6px 20px;
-        margin: 5px 0px 5px;
+        margin: 15px 15px 20px 0;
+        line-height: 20px;
+        
         &.activo{
             color:white;
             background-color:$azul;

@@ -24,8 +24,10 @@
 .button.button-mini {
   color: #007bff;
   background-color: #ecf5ff;
+  border: 1px solid #ecf5ff;
   padding: 6px 20px;
-  margin: 5px 0px 5px;
+  margin: 15px 15px 20px 0;
+  line-height: 20px;
 }
 .button.button-mini.activo {
   color: white;
@@ -83,6 +85,9 @@
   width: 42%;
   margin: auto;
   text-align: center;
+}
+.container .encabezado.full {
+  width: 100%;
 }
 
 .fixthing {
@@ -341,6 +346,7 @@ header nav a .fas {
   justify-content: center;
 }
 .team .batman {
+  position: relative;
   border-radius: 50%;
   width: 330px;
   height: 330px;
@@ -350,6 +356,9 @@ header nav a .fas {
   color: white;
   overflow: hidden;
   margin: 10px;
+}
+.team .batman img {
+  width: 100%;
 }
 @media (min-width: 990px) {
   .team .batman {
@@ -384,31 +393,13 @@ header nav a .fas {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
   transition: all 2s linear;
-}
-.team .bat1 {
-  background-image: url("../img/team-01.jpg");
-  background-size: 100%;
-}
-.team .bat2 {
-  background-image: url("../img/team-02.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat3 {
-  background-image: url("../img/team-03.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat4 {
-  background-image: url("../img/team-04.jpg");
-  background-size: 100%;
+  position: absolute;
 }
 
 .clientescont {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -418,7 +409,6 @@ header nav a .fas {
   .clientescont {
     max-width: 1100px;
     padding: auto;
-    justify-content: center;
   }
 }
 .clientescont .clientes {
@@ -446,7 +436,7 @@ header nav a .fas {
 .intro {
   background: #1445b3;
   width: 100%;
-  padding: 90px 0px 50px 0px;
+  padding-top: 129px;
 }
 .intro .container-intro {
   width: 100%;
@@ -454,7 +444,7 @@ header nav a .fas {
 }
 .intro .container-intro .intro-img {
   height: auto;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .intro .container-intro .intro-img img {
@@ -489,10 +479,17 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .intro {
+    padding-top: 200px;
+  }
   .intro .container-intro {
-    max-width: 960px;
+    max-width: 1115px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+  }
+  .intro .container-intro .intro-img {
+    padding: 0 0 97px 102px;
+    width: 50%;
   }
   .intro .container-intro .intro-info h2 {
     font-size: 48px;
@@ -510,7 +507,7 @@ header nav a .fas {
   height: auto;
 }
 .about .container-subcontainer {
-  margin: 0px 80px 30px;
+  margin: 0px 0px 30px;
 }
 .about .container-subcontainer p {
   font-size: 16px;
@@ -573,21 +570,26 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
   .about .subcontainer-principal {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: 80px;
+    margin-bottom: 12px;
   }
   .about .subcontainer-principal .container-img {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-subcontainer {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-texto {
-    width: 50%;
+    width: 45%;
   }
-  .about .subcontainer-princ {
-    display: flex;
+  .about .princ-row {
     flex-direction: row;
   }
 }
@@ -695,11 +697,10 @@ header nav a .fas {
   border-bottom: #00458f solid 2px;
 }
 .whychoose .content {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0px 0px 20px;
   padding-bottom: 13px;
+  justify-content: space-between;
 }
 .whychoose .content .content-num {
   width: 45%;
@@ -732,21 +733,244 @@ header nav a .fas {
   }
   .whychoose .content {
     justify-content: center;
+    width: 97%;
   }
   .whychoose .content .content-num {
     width: 20%;
     padding: 14px;
   }
 }
-.portafolio .content-portafolio {
-  text-align: center;
+.portafolio button {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
 }
-.portafolio .content-portafolio h2 {
-  font-size: 36px;
-  text-align: center;
+.portafolio button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #007bff;
+}
+.portafolio .cont-cards {
+  width: 80%;
+  margin: auto;
+}
+.portafolio .cont-cards .cont-card {
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+  border-radius: 6px;
+  margin: 0 5px 27px 20px;
+}
+.portafolio .cont-cards .cont-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portafolio .cont-cards .cont-card .cont-capa {
+  visibility: hidden;
+  background: #0089ff69;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 {
+  padding-bottom: 8px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  line-height: 1px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 span {
+  color: #e2effe;
   font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div {
+  font-size: 46px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon {
+  border-radius: 50%;
+  background: #007bff;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+}
+.portafolio .cont-cards .cont-card:hover > .cont-capa {
+  visibility: visible;
 }
 
+@media (min-width: 990px) {
+  .portafolio .cont-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portafolio .cont-cards .cont-card {
+    width: 30%;
+  }
+}
+footer {
+  background: #004a99;
+  color: #eee;
+  padding-top: 60px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .content-general {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+footer .content-general .cont-wayne {
+  margin-bottom: 30px;
+}
+footer .content-general .cont-wayne h3 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+footer .content-general .cont-wayne p {
+  font-size: 13px;
+  line-height: 24px;
+}
+footer .content-general .useful {
+  padding-bottom: 20px;
+}
+footer .content-general .useful h4 {
+  font-size: 14px;
+  padding: 1px 0px 12px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .content-general .useful p {
+  color: #ecf5ff;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 8px;
+}
+footer .content-general .contact h4 {
+  padding-bottom: 10px;
+}
+footer .content-general .contact p {
+  line-height: 26px;
+}
+footer .content-general .subcribe {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-size: 14px;
+}
+footer .content-general .subcribe h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+footer .content-general .subcribe p {
+  font-family: "Open Sans", sans-serif;
+  color: #eee;
+}
+footer .content-general .subcribe form {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .content-general .subcribe form .email {
+  border: 0;
+  padding: 8px 8px;
+  width: 58%;
+}
+footer .content-general .subcribe form .submit {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .container-copycredi {
+  background: #00428a;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 25px;
+}
+footer .container-copycredi p {
+  font-size: 14px;
+  color: #f1f7ff;
+  padding-top: 30px;
+  margin-bottom: 4px;
+  color: #eee;
+}
+footer .container-copycredi div {
+  font-size: 13px;
+  color: #f1f7ff;
+}
+
+@media (min-width: 990px) {
+  footer .content-general {
+    display: flex;
+    width: 85%;
+  }
+  footer .content-general .cont-wayne {
+    max-width: 33.33%;
+  }
+  footer .content-general .useful {
+    max-width: 16.66%;
+    padding: 0px 25px 0px 25px;
+  }
+  footer .content-general .useful p {
+    padding-bottom: 4px;
+  }
+  footer .content-general .contact {
+    padding: 0 25px 0px 30px;
+  }
+  footer .content-general .subcribe {
+    padding: 0 32px 0px 35px;
+  }
+  footer .content-general .subcribe p {
+    padding: 0px 12px 0 0;
+  }
+  footer .content-general .subcribe, footer .content-general .contact {
+    max-width: 25%;
+  }
+  footer .icons-social a {
+    color: white;
+    width: 36px;
+    display: inline-block;
+    height: 36px;
+    background-color: #007bff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
 body {
   margin: 0px;
 }
