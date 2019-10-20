@@ -346,6 +346,7 @@ header nav a .fas {
   justify-content: center;
 }
 .team .batman {
+  position: relative;
   border-radius: 50%;
   width: 330px;
   height: 330px;
@@ -355,6 +356,9 @@ header nav a .fas {
   color: white;
   overflow: hidden;
   margin: 10px;
+}
+.team .batman img {
+  width: 100%;
 }
 @media (min-width: 990px) {
   .team .batman {
@@ -389,24 +393,7 @@ header nav a .fas {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
   transition: all 2s linear;
-}
-.team .bat1 {
-  background-image: url("../img/team-01.jpg");
-  background-size: 100%;
-}
-.team .bat2 {
-  background-image: url("../img/team-02.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat3 {
-  background-image: url("../img/team-03.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat4 {
-  background-image: url("../img/team-04.jpg");
-  background-size: 100%;
+  position: absolute;
 }
 
 .clientescont {
@@ -520,7 +507,7 @@ header nav a .fas {
   height: auto;
 }
 .about .container-subcontainer {
-  margin: 0px 80px 30px;
+  margin: 0px 0px 30px;
 }
 .about .container-subcontainer p {
   font-size: 16px;
@@ -583,21 +570,26 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
   .about .subcontainer-principal {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: 80px;
+    margin-bottom: 12px;
   }
   .about .subcontainer-principal .container-img {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-subcontainer {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-texto {
-    width: 50%;
+    width: 45%;
   }
-  .about .subcontainer-princ {
-    display: flex;
+  .about .princ-row {
     flex-direction: row;
   }
 }
@@ -705,11 +697,10 @@ header nav a .fas {
   border-bottom: #00458f solid 2px;
 }
 .whychoose .content {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0px 0px 20px;
   padding-bottom: 13px;
+  justify-content: space-between;
 }
 .whychoose .content .content-num {
   width: 45%;
@@ -742,6 +733,7 @@ header nav a .fas {
   }
   .whychoose .content {
     justify-content: center;
+    width: 97%;
   }
   .whychoose .content .content-num {
     width: 20%;
@@ -847,32 +839,138 @@ header nav a .fas {
 }
 footer {
   background: #004a99;
-  color: #fff;
+  color: #eee;
+  padding-top: 60px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 footer .content-general {
-  width: 80%;
+  width: 70%;
   margin: auto;
+  padding-bottom: 30px;
+}
+footer .content-general .cont-wayne {
+  margin-bottom: 30px;
 }
 footer .content-general .cont-wayne h3 {
   font-size: 34px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
 }
 footer .content-general .cont-wayne p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "Montserrat", sans-serif;
 }
 footer .content-general .useful {
+  padding-bottom: 20px;
+}
+footer .content-general .useful h4 {
   font-size: 14px;
-  font-weight: bold;
+  padding: 1px 0px 12px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .content-general .useful p {
+  color: #ecf5ff;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 8px;
+}
+footer .content-general .contact h4 {
   padding-bottom: 10px;
 }
-footer .content-general .container-copycredi {
+footer .content-general .contact p {
+  line-height: 26px;
+}
+footer .content-general .subcribe {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-size: 14px;
+}
+footer .content-general .subcribe h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+footer .content-general .subcribe p {
+  font-family: "Open Sans", sans-serif;
+  color: #eee;
+}
+footer .content-general .subcribe form {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .content-general .subcribe form .email {
+  border: 0;
+  padding: 8px 8px;
+  width: 58%;
+}
+footer .content-general .subcribe form .submit {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .container-copycredi {
   background: #00428a;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 25px;
+}
+footer .container-copycredi p {
+  font-size: 14px;
+  color: #f1f7ff;
+  padding-top: 30px;
+  margin-bottom: 4px;
+  color: #eee;
+}
+footer .container-copycredi div {
+  font-size: 13px;
+  color: #f1f7ff;
 }
 
+@media (min-width: 990px) {
+  footer .content-general {
+    display: flex;
+    width: 85%;
+  }
+  footer .content-general .cont-wayne {
+    max-width: 33.33%;
+  }
+  footer .content-general .useful {
+    max-width: 16.66%;
+    padding: 0px 25px 0px 25px;
+  }
+  footer .content-general .useful p {
+    padding-bottom: 4px;
+  }
+  footer .content-general .contact {
+    padding: 0 25px 0px 30px;
+  }
+  footer .content-general .subcribe {
+    padding: 0 32px 0px 35px;
+  }
+  footer .content-general .subcribe p {
+    padding: 0px 12px 0 0;
+  }
+  footer .content-general .subcribe, footer .content-general .contact {
+    max-width: 25%;
+  }
+  footer .icons-social a {
+    color: white;
+    width: 36px;
+    display: inline-block;
+    height: 36px;
+    background-color: #007bff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
 body {
   margin: 0px;
 }

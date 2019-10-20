@@ -1,32 +1,147 @@
 footer{
     background: $azulopaco;
-    color:#fff;
+    color:$whitebone;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: $titulos;
     .content-general{
-        width: 80%;
+        width: 70%;
         margin: auto;
+        padding-bottom: 30px;
         .cont-wayne{
-            
+            margin-bottom: 30px;
             h3{
                 font-size: 34px;
-                font-family: $titulos;
                 font-weight: 400;
                 letter-spacing: 3px;
             }
             p{
                 font-size: 13px;
                 line-height: 24px;
-                font-family: $titulos;
+                
             }
         }
         .useful{
+            padding-bottom: 20px;
+            h4{
             font-size: 14px;
-            font-weight: bold;
-            padding-bottom: 10px;
+            padding: 1px 0px 12px 0px;
+            font-family: $titulos;
+            }
+            p{
+            color:$whitesky;
+            font-family: $parrafos;
+            padding-bottom: 8px;
+            }
+        }
+        .contact{
+            h4{
+                padding-bottom: 10px;
+            }
+            p{
+                line-height: 26px;
+            }
+
         }
 
-        .container-copycredi{
-            background:$azulosc;
+        .subcribe{
+            padding: 0;
+            margin: 0 0 30px 0;
+            font-size:14px;
+            h4{
+                font-family: $titulos;
+                color:white;
+                font-weight: bold;
+            }
+            p{
+                font-family: $parrafos;
+                color:$whitebone;
+            }
+            form{
+                display: flex;
+                flex-wrap: wrap;
             
+                .email{
+                    border: 0;
+                    padding: 8px 8px;
+                    width: 58%;
+                }
+                .submit{
+                    background: #007bff;
+                    border: 0;
+                    width: 35%;
+                    padding: 6px 0;
+                    color: #fff;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-family: $parrafos;
+
+                }
+            }
+        }
+    }
+    .container-copycredi{
+        background:$azulosc;
+        text-align: center;
+        font-family: $parrafos;
+        padding-bottom: 25px;
+        
+        p{
+            font-size: 14px;
+            color:$whitegray;
+            padding-top: 30px;
+            margin-bottom: 4px;
+            color:$whitebone;
+        } 
+        div{
+            font-size: 13px;
+            color: #f1f7ff;
+        }
+    }
+}
+
+@include desktop{
+    footer{
+        .content-general{
+            display: flex;
+            width: 85%;
+            
+            .cont-wayne{
+                max-width: 33.33%;
+            }
+            .useful{
+                max-width: 16.66%;
+                padding: 0px 25px 0px 25px;
+                p{
+                    padding-bottom: 4px;
+                }
+            }
+            .contact{
+                padding: 0 25px 0px 30px;
+            }
+            .subcribe{
+                padding: 0 32px 0px 35px;
+                p{
+                    padding: 0px 12px 0 0;  
+                }
+            }
+        
+            .subcribe, .contact{
+                max-width: 25%;
+            }
+        }
+
+        .icons-social a {
+            color: white;
+            width: 36px;
+            display: inline-block;
+            height: 36px;
+            background-color: #007bff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-size: 18px;
         }
     }
 }

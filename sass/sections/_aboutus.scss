@@ -1,5 +1,4 @@
 .about{
-       
     .container-img{   
         width: 75%; 
         margin: auto;
@@ -9,15 +8,13 @@
         }      
     }
     .container-subcontainer{
-        margin: 0px 80px 30px;
+        margin: 0px 0px 30px;
         p{
             font-size: 16px;
             line-height: 26px;
             color:$grayp;
-        }
-        
+        } 
         .subcontainer{
-            
             padding-bottom: 30px;
             &:hover{
                 .subcontainer-img{
@@ -84,24 +81,25 @@
 
 @include desktop{
     .about{
+        width: 90%;
+        margin: auto;
         .subcontainer-principal{
             display: flex;
             flex-direction: row-reverse;
+            margin-left: 80px;
+            margin-bottom: 12px;
             .container-img{
-                width: 50%;
+                width: 45%;
             }
             .container-subcontainer{    
-                width: 50%;
+                width: 45%;
             }
             .container-texto{
-                width: 50%;
-            }
-            
+                width: 45%;
+            }   
         }
-        .subcontainer-princ{
-            display: flex;
+        .princ-row{
             flex-direction:row;
-
         }
        
     }

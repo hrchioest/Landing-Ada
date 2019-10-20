@@ -51,11 +51,10 @@
         }
     }
     .content{
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 24px 0px 0px 20px;
         padding-bottom: 13px;
+        justify-content: space-between;
         .content-num{
             width: 45%;
             text-align: center;
@@ -91,6 +90,7 @@
         }
         .content{
             justify-content: center;
+            width: 97%;
             .content-num{
                 width: 20%;
                 padding: 14px;
