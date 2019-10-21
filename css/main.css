@@ -34,6 +34,23 @@
   background-color: #007bff;
 }
 
+.button-msj {
+  background-color: #007bff;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 40px;
+  padding-top: 7px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+.button-msj:hover {
+  background-color: #004a99;
+}
+
 .titulo {
   font-size: 36px;
   font-weight: 500;
@@ -94,6 +111,12 @@
   width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.contenedorblanco {
+  width: 100%;
+  background: white;
+  padding: 50px 0px;
 }
 
 header {
@@ -275,6 +298,9 @@ header nav a .fas {
   }
 }
 
+.testi {
+  background: #ecf5ff;
+}
 @media (min-width: 990px) {
   .testi {
     display: flex;
@@ -394,6 +420,10 @@ header nav a .fas {
   opacity: 1;
   transition: all 2s linear;
   position: absolute;
+}
+
+.oclients {
+  background: #ecf5ff;
 }
 
 .clientescont {
@@ -827,150 +857,6 @@ header nav a .fas {
   visibility: visible;
 }
 
-@media (min-width: 990px) {
-  .portafolio .cont-cards {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .portafolio .cont-cards .cont-card {
-    width: 30%;
-  }
-}
-footer {
-  background: #004a99;
-  color: #eee;
-  padding-top: 60px;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-}
-footer .content-general {
-  width: 70%;
-  margin: auto;
-  padding-bottom: 30px;
-}
-footer .content-general .cont-wayne {
-  margin-bottom: 30px;
-}
-footer .content-general .cont-wayne h3 {
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-footer .content-general .cont-wayne p {
-  font-size: 13px;
-  line-height: 24px;
-}
-footer .content-general .useful {
-  padding-bottom: 20px;
-}
-footer .content-general .useful h4 {
-  font-size: 14px;
-  padding: 1px 0px 12px 0px;
-  font-family: "Montserrat", sans-serif;
-}
-footer .content-general .useful p {
-  color: #ecf5ff;
-  font-family: "Open Sans", sans-serif;
-  padding-bottom: 8px;
-}
-footer .content-general .contact h4 {
-  padding-bottom: 10px;
-}
-footer .content-general .contact p {
-  line-height: 26px;
-}
-footer .content-general .subcribe {
-  padding: 0;
-  margin: 0 0 30px 0;
-  font-size: 14px;
-}
-footer .content-general .subcribe h4 {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: bold;
-}
-footer .content-general .subcribe p {
-  font-family: "Open Sans", sans-serif;
-  color: #eee;
-}
-footer .content-general .subcribe form {
-  display: flex;
-  flex-wrap: wrap;
-}
-footer .content-general .subcribe form .email {
-  border: 0;
-  padding: 8px 8px;
-  width: 58%;
-}
-footer .content-general .subcribe form .submit {
-  background: #007bff;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-}
-footer .container-copycredi {
-  background: #00428a;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  padding-bottom: 25px;
-}
-footer .container-copycredi p {
-  font-size: 14px;
-  color: #f1f7ff;
-  padding-top: 30px;
-  margin-bottom: 4px;
-  color: #eee;
-}
-footer .container-copycredi div {
-  font-size: 13px;
-  color: #f1f7ff;
-}
-
-@media (min-width: 990px) {
-  footer .content-general {
-    display: flex;
-    width: 85%;
-  }
-  footer .content-general .cont-wayne {
-    max-width: 33.33%;
-  }
-  footer .content-general .useful {
-    max-width: 16.66%;
-    padding: 0px 25px 0px 25px;
-  }
-  footer .content-general .useful p {
-    padding-bottom: 4px;
-  }
-  footer .content-general .contact {
-    padding: 0 25px 0px 30px;
-  }
-  footer .content-general .subcribe {
-    padding: 0 32px 0px 35px;
-  }
-  footer .content-general .subcribe p {
-    padding: 0px 12px 0 0;
-  }
-  footer .content-general .subcribe, footer .content-general .contact {
-    max-width: 25%;
-  }
-  footer .icons-social a {
-    color: white;
-    width: 36px;
-    display: inline-block;
-    height: 36px;
-    background-color: #007bff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 36px;
-    font-size: 18px;
-  }
-}
 body {
   margin: 0px;
 }
