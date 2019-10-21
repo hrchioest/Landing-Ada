@@ -301,10 +301,14 @@ header nav a .fas {
 .testi {
   background: #ecf5ff;
 }
+.testi .test-contenido {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
 @media (min-width: 990px) {
-  .testi {
-    display: flex;
-    justify-content: center;
+  .testi .test-contenido {
+    width: 42%;
   }
 }
 @media (min-width: 990px) {
@@ -326,6 +330,7 @@ header nav a .fas {
     width: 100%;
     text-align: left;
     padding-bottom: 70px;
+    margin: 0;
   }
   .testi .monials img {
     width: 120px;
@@ -514,6 +519,7 @@ header nav a .fas {
   }
   .intro .container-intro {
     max-width: 1115px;
+    width: 85%;
     display: flex;
     flex-flow: row-reverse;
   }
@@ -535,6 +541,10 @@ header nav a .fas {
 .about .container-img img {
   max-width: 100%;
   height: auto;
+}
+.about .subcontainer-principal {
+  width: 85%;
+  margin: auto;
 }
 .about .container-subcontainer {
   margin: 0px 0px 30px;
@@ -586,7 +596,7 @@ header nav a .fas {
   color: #444;
 }
 .about .container-texto {
-  margin: 30px 80px;
+  margin: 30px 0px;
 }
 .about .container-texto h3 {
   font-size: 24px;
@@ -886,7 +896,12 @@ header nav a .fas {
 }
 .formcontact .contactform {
   width: 95%;
-  margin: 5px 10px 5px 10px;
+  margin: 5px 0px;
+}
+@media (min-width: 990px) {
+  .formcontact .contactform {
+    margin: 5px 10px;
+  }
 }
 
 .datos {
@@ -1035,6 +1050,26 @@ footer .content-general .subcribe form .submit {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
+footer .content-general .subcribe form .submit:hover {
+  background-color: #007bff;
+}
+footer .content-general .icons-social {
+  margin-bottom: 20px;
+}
+footer .content-general .icons-social a {
+  color: white;
+  width: 36px;
+  display: inline-block;
+  height: 36px;
+  background-color: #007bff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-size: 18px;
+}
+footer .content-general .icons-social a:hover {
+  background-color: #0067d5;
+}
 footer .container-copycredi {
   background: #00428a;
   text-align: center;
@@ -1079,17 +1114,6 @@ footer .container-copycredi div {
   }
   footer .content-general .subcribe, footer .content-general .contact {
     max-width: 25%;
-  }
-  footer .icons-social a {
-    color: white;
-    width: 36px;
-    display: inline-block;
-    height: 36px;
-    background-color: #007bff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 36px;
-    font-size: 18px;
   }
 }
 body {

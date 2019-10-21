@@ -48,6 +48,7 @@ footer{
             padding: 0;
             margin: 0 0 30px 0;
             font-size:14px;
+            
             h4{
                 font-family: $titulos;
                 color:white;
@@ -67,7 +68,7 @@ footer{
                     width: 58%;
                 }
                 .submit{
-                    background: #007bff;
+                    background: $azul;
                     border: 0;
                     width: 35%;
                     padding: 6px 0;
@@ -76,7 +77,26 @@ footer{
                     cursor: pointer;
                     font-size: 14px;
                     font-family: $parrafos;
-
+                    &:hover{
+                        background-color:$azul;
+                    }
+                }
+            }
+        }
+        .icons-social{
+            margin-bottom: 20px;
+            a {
+                color: white;
+                width: 36px;
+                display: inline-block;
+                height: 36px;
+                background-color:$azul;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 36px;
+                font-size: 18px;
+                &:hover{
+                    background-color:$azulsl;
                 }
             }
         }
@@ -96,7 +116,7 @@ footer{
         } 
         div{
             font-size: 13px;
-            color: #f1f7ff;
+            color: $whitegray;
         }
     }
 }
@@ -130,18 +150,6 @@ footer{
             .subcribe, .contact{
                 max-width: 25%;
             }
-        }
-
-        .icons-social a {
-            color: white;
-            width: 36px;
-            display: inline-block;
-            height: 36px;
-            background-color: #007bff;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 36px;
-            font-size: 18px;
         }
     }
 }

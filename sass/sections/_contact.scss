@@ -15,12 +15,17 @@
     justify-content: center;
     align-items: center;
 
-.contactform{
+    .contactform{
+        
+        width: 95%;
+        margin: 5px 0px;
+        @include desktop {
+            margin: 5px 10px;
+         }
+
+        
     
-    width: 95%;
-    margin: 5px 10px 5px 10px;
-   
-}
+    }
 }
 
 .datos{
@@ -32,15 +37,13 @@
     height: 300px;
     @include desktop {
        width: 60%;
-      }
-   
-
-.mapa{
-     
-     height: 100%;
-     width: 97%;
-        border: none;
-}
+    }
+    .mapa{
+        
+        height: 100%;
+        width: 97%;
+            border: none;
+    }
 }
 
 .infomapa{
@@ -51,8 +54,7 @@
     text-align: initial;
     @include desktop {
         flex-flow: row nowrap;
-       }
-
+    }
     i{
         margin-right: 10px;
     }
@@ -69,16 +71,15 @@
 }
 
 .contactglobal{
-    
-@include desktop {
-    display: flex;
-    flex-direction: row;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
 
-    .txtarea{
-        height: 132px;
-        margin-bottom: 20px;
+        .txtarea{
+            height: 132px;
+            margin-bottom: 20px;
+        }
     }
-  }
 }
 
 .nameyemail{
@@ -90,7 +91,7 @@
         flex-direction: row;
         
         .contactnombre{
-          margin-right: 0px;     
+            margin-right: 0px;     
         }
-      }
+    }
 }
