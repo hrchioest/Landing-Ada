@@ -1,7 +1,7 @@
 .intro{
     background: $azulmed;
     width: 100%;
-    padding: 90px 0px 50px 0px;
+    padding-top: 129px;
 
     .container-intro{
         width: 100%;
@@ -9,7 +9,7 @@
     
         .intro-img{
             height: auto;
-            width: 50%;
+            width: 80%;
             margin: auto;
             img{
                 max-width:100%;
@@ -57,10 +57,15 @@
 
 @include desktop{
     .intro{
+        padding-top: 200px;
         .container-intro{
-            max-width: 960px;
+            max-width: 1115px;
             display: flex;
-            flex-direction: row-reverse;
+            flex-flow: row-reverse;
+            .intro-img{
+                padding: 0 0 97px 102px;
+                width: 50%;
+            }
             .intro-info{
                 h2{
                     font-size: 48px;

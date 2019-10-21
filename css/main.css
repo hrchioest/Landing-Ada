@@ -24,8 +24,10 @@
 .button.button-mini {
   color: #007bff;
   background-color: #ecf5ff;
+  border: 1px solid #ecf5ff;
   padding: 6px 20px;
-  margin: 5px 0px 5px;
+  margin: 15px 15px 20px 0;
+  line-height: 20px;
 }
 .button.button-mini.activo {
   color: white;
@@ -100,6 +102,9 @@
   width: 42%;
   margin: auto;
   text-align: center;
+}
+.container .encabezado.full {
+  width: 100%;
 }
 
 .fixthing {
@@ -367,6 +372,7 @@ header nav a .fas {
   justify-content: center;
 }
 .team .batman {
+  position: relative;
   border-radius: 50%;
   width: 330px;
   height: 330px;
@@ -376,6 +382,9 @@ header nav a .fas {
   color: white;
   overflow: hidden;
   margin: 10px;
+}
+.team .batman img {
+  width: 100%;
 }
 @media (min-width: 990px) {
   .team .batman {
@@ -410,24 +419,7 @@ header nav a .fas {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
   transition: all 2s linear;
-}
-.team .bat1 {
-  background-image: url("../img/team-01.jpg");
-  background-size: 100%;
-}
-.team .bat2 {
-  background-image: url("../img/team-02.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat3 {
-  background-image: url("../img/team-03.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-.team .bat4 {
-  background-image: url("../img/team-04.jpg");
-  background-size: 100%;
+  position: absolute;
 }
 
 .oclients {
@@ -437,8 +429,7 @@ header nav a .fas {
 .clientescont {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -448,7 +439,6 @@ header nav a .fas {
   .clientescont {
     max-width: 1100px;
     padding: auto;
-    justify-content: center;
   }
 }
 .clientescont .clientes {
@@ -476,7 +466,7 @@ header nav a .fas {
 .intro {
   background: #1445b3;
   width: 100%;
-  padding: 90px 0px 50px 0px;
+  padding-top: 129px;
 }
 .intro .container-intro {
   width: 100%;
@@ -484,7 +474,7 @@ header nav a .fas {
 }
 .intro .container-intro .intro-img {
   height: auto;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .intro .container-intro .intro-img img {
@@ -519,10 +509,17 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .intro {
+    padding-top: 200px;
+  }
   .intro .container-intro {
-    max-width: 960px;
+    max-width: 1115px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+  }
+  .intro .container-intro .intro-img {
+    padding: 0 0 97px 102px;
+    width: 50%;
   }
   .intro .container-intro .intro-info h2 {
     font-size: 48px;
@@ -540,7 +537,7 @@ header nav a .fas {
   height: auto;
 }
 .about .container-subcontainer {
-  margin: 0px 80px 30px;
+  margin: 0px 0px 30px;
 }
 .about .container-subcontainer p {
   font-size: 16px;
@@ -603,21 +600,26 @@ header nav a .fas {
 }
 
 @media (min-width: 990px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
   .about .subcontainer-principal {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: 80px;
+    margin-bottom: 12px;
   }
   .about .subcontainer-principal .container-img {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-subcontainer {
-    width: 50%;
+    width: 45%;
   }
   .about .subcontainer-principal .container-texto {
-    width: 50%;
+    width: 45%;
   }
-  .about .subcontainer-princ {
-    display: flex;
+  .about .princ-row {
     flex-direction: row;
   }
 }
@@ -725,11 +727,10 @@ header nav a .fas {
   border-bottom: #00458f solid 2px;
 }
 .whychoose .content {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0px 0px 20px;
   padding-bottom: 13px;
+  justify-content: space-between;
 }
 .whychoose .content .content-num {
   width: 45%;
@@ -762,110 +763,98 @@ header nav a .fas {
   }
   .whychoose .content {
     justify-content: center;
+    width: 97%;
   }
   .whychoose .content .content-num {
     width: 20%;
     padding: 14px;
   }
 }
-.portafolio .content-portafolio {
-  text-align: center;
-}
-.portafolio .content-portafolio h2 {
-  font-size: 36px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.datacontacto {
-  color: #283d50;
+.portafolio button {
+  font-size: 12px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
 }
-
-.dataicon {
-  color: #007bff;
-  font-size: 30px;
+.portafolio button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #007bff;
 }
-
-.formcontact {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-.formcontact .contactform {
-  width: 95%;
-  margin: 5px 10px 5px 10px;
-}
-
-.datos {
-  height: 30px;
-}
-
-.mapacont {
-  width: 100%;
-  height: 300px;
-}
-@media (min-width: 990px) {
-  .mapacont {
-    width: 60%;
-  }
-}
-.mapacont .mapa {
-  height: 100%;
-  width: 97%;
-  border: none;
-}
-
-.infomapa {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  text-align: initial;
-}
-@media (min-width: 990px) {
-  .infomapa {
-    flex-flow: row nowrap;
-  }
-}
-.infomapa i {
-  margin-right: 10px;
-}
-.infomapa .iconotextomapa {
-  width: 200px;
-  padding: 10px 0 20px 0;
-}
-@media (min-width: 990px) {
-  .infomapa .iconotextomapa {
-    padding: 10px 0 20px 15px;
-  }
-}
-
-@media (min-width: 990px) {
-  .contactglobal {
-    display: flex;
-    flex-direction: row;
-  }
-  .contactglobal .txtarea {
-    height: 132px;
-    margin-bottom: 20px;
-  }
-}
-
-.nameyemail {
-  width: 100%;
+.portafolio .cont-cards {
+  width: 80%;
   margin: auto;
 }
-@media (min-width: 990px) {
-  .nameyemail {
-    width: 99%;
-    display: flex;
-    flex-direction: row;
-  }
-  .nameyemail .contactnombre {
-    margin-right: 0px;
-  }
+.portafolio .cont-cards .cont-card {
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+  border-radius: 6px;
+  margin: 0 5px 27px 20px;
+}
+.portafolio .cont-cards .cont-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portafolio .cont-cards .cont-card .cont-capa {
+  visibility: hidden;
+  background: #0089ff69;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 {
+  padding-bottom: 8px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  line-height: 1px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa h4 span {
+  color: #e2effe;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div {
+  font-size: 46px;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon {
+  border-radius: 50%;
+  background: #007bff;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.portafolio .cont-cards .cont-card .cont-capa .capa div .cont-icon i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+}
+.portafolio .cont-cards .cont-card:hover > .cont-capa {
+  visibility: visible;
 }
 
 body {
