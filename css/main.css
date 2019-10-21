@@ -857,6 +857,241 @@ header nav a .fas {
   visibility: visible;
 }
 
+@media (min-width: 990px) {
+  .portafolio .cont-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portafolio .cont-cards .cont-card {
+    width: 30%;
+  }
+}
+.datacontacto {
+  color: #283d50;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.dataicon {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.formcontact {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.formcontact .contactform {
+  width: 95%;
+  margin: 5px 10px 5px 10px;
+}
+
+.datos {
+  height: 30px;
+}
+
+.mapacont {
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 990px) {
+  .mapacont {
+    width: 60%;
+  }
+}
+.mapacont .mapa {
+  height: 100%;
+  width: 97%;
+  border: none;
+}
+
+.infomapa {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: initial;
+}
+@media (min-width: 990px) {
+  .infomapa {
+    flex-flow: row nowrap;
+  }
+}
+.infomapa i {
+  margin-right: 10px;
+}
+.infomapa .iconotextomapa {
+  width: 200px;
+  padding: 10px 0 20px 0;
+}
+@media (min-width: 990px) {
+  .infomapa .iconotextomapa {
+    padding: 10px 0 20px 15px;
+  }
+}
+
+@media (min-width: 990px) {
+  .contactglobal {
+    display: flex;
+    flex-direction: row;
+  }
+  .contactglobal .txtarea {
+    height: 132px;
+    margin-bottom: 20px;
+  }
+}
+
+.nameyemail {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 990px) {
+  .nameyemail {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+  }
+  .nameyemail .contactnombre {
+    margin-right: 0px;
+  }
+}
+
+footer {
+  background: #004a99;
+  color: #eee;
+  padding-top: 60px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .content-general {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+footer .content-general .cont-wayne {
+  margin-bottom: 30px;
+}
+footer .content-general .cont-wayne h3 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+footer .content-general .cont-wayne p {
+  font-size: 13px;
+  line-height: 24px;
+}
+footer .content-general .useful {
+  padding-bottom: 20px;
+}
+footer .content-general .useful h4 {
+  font-size: 14px;
+  padding: 1px 0px 12px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+footer .content-general .useful p {
+  color: #ecf5ff;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 8px;
+}
+footer .content-general .contact h4 {
+  padding-bottom: 10px;
+}
+footer .content-general .contact p {
+  line-height: 26px;
+}
+footer .content-general .subcribe {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-size: 14px;
+}
+footer .content-general .subcribe h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+footer .content-general .subcribe p {
+  font-family: "Open Sans", sans-serif;
+  color: #eee;
+}
+footer .content-general .subcribe form {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .content-general .subcribe form .email {
+  border: 0;
+  padding: 8px 8px;
+  width: 58%;
+}
+footer .content-general .subcribe form .submit {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .container-copycredi {
+  background: #00428a;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 25px;
+}
+footer .container-copycredi p {
+  font-size: 14px;
+  color: #f1f7ff;
+  padding-top: 30px;
+  margin-bottom: 4px;
+  color: #eee;
+}
+footer .container-copycredi div {
+  font-size: 13px;
+  color: #f1f7ff;
+}
+
+@media (min-width: 990px) {
+  footer .content-general {
+    display: flex;
+    width: 85%;
+  }
+  footer .content-general .cont-wayne {
+    max-width: 33.33%;
+  }
+  footer .content-general .useful {
+    max-width: 16.66%;
+    padding: 0px 25px 0px 25px;
+  }
+  footer .content-general .useful p {
+    padding-bottom: 4px;
+  }
+  footer .content-general .contact {
+    padding: 0 25px 0px 30px;
+  }
+  footer .content-general .subcribe {
+    padding: 0 32px 0px 35px;
+  }
+  footer .content-general .subcribe p {
+    padding: 0px 12px 0 0;
+  }
+  footer .content-general .subcribe, footer .content-general .contact {
+    max-width: 25%;
+  }
+  footer .icons-social a {
+    color: white;
+    width: 36px;
+    display: inline-block;
+    height: 36px;
+    background-color: #007bff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
 body {
   margin: 0px;
 }
