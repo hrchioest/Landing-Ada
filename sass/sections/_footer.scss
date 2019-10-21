@@ -34,10 +34,13 @@ footer{
                 color:$celesteclaro;
                 font-family: $parrafos;
                 padding-bottom: 15px;
-                &:hover{
-                    color:$celeste;
-                    transition: 0.5s;
+                @include desktop{
+                    &:hover{
+                        color:$celeste;
+                        transition: 0.5s;
+                    }
                 }
+               
             }
         }
         .contact{

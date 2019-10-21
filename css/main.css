@@ -1012,9 +1012,11 @@ footer .content-general .useful a {
   font-family: "Open Sans", sans-serif;
   padding-bottom: 15px;
 }
-footer .content-general .useful a:hover {
-  color: #74b5fc;
-  transition: 0.5s;
+@media (min-width: 990px) {
+  footer .content-general .useful a:hover {
+    color: #74b5fc;
+    transition: 0.5s;
+  }
 }
 footer .content-general .contact h4 {
   padding-bottom: 10px;
