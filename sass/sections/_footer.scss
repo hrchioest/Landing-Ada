@@ -25,13 +25,19 @@ footer{
             padding-bottom: 20px;
             h4{
             font-size: 14px;
-            padding: 1px 0px 12px 0px;
+            padding: 1px 0px 24px 0px;
             font-family: $titulos;
             }
-            p{
-            color:$whitesky;
-            font-family: $parrafos;
-            padding-bottom: 8px;
+            a{
+                display: block;
+                text-decoration: none;
+                color:$celesteclaro;
+                font-family: $parrafos;
+                padding-bottom: 15px;
+                &:hover{
+                    color:$celeste;
+                    transition: 0.5s;
+                }
             }
         }
         .contact{

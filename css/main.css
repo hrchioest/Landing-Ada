@@ -1002,13 +1002,19 @@ footer .content-general .useful {
 }
 footer .content-general .useful h4 {
   font-size: 14px;
-  padding: 1px 0px 12px 0px;
+  padding: 1px 0px 24px 0px;
   font-family: "Montserrat", sans-serif;
 }
-footer .content-general .useful p {
+footer .content-general .useful a {
+  display: block;
+  text-decoration: none;
   color: #ecf5ff;
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
+}
+footer .content-general .useful a:hover {
+  color: #74b5fc;
+  transition: 0.5s;
 }
 footer .content-general .contact h4 {
   padding-bottom: 10px;
