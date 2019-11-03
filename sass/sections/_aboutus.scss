@@ -3,7 +3,8 @@
         width: 75%; 
         margin: auto;
         img{
-            max-width: 100%;    
+            max-width: 100%;
+            // El img tiene por default height: auto
             height: auto;
         }      
     }

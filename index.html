@@ -11,11 +11,15 @@
         <script src="https://kit.fontawesome.com/7ee09cfe90.js" crossorigin="anonymous"></script>
         <title>TP - 1</title>
 </head>
+<!-- Los nombres de las clases, en lineas generales, deberían ser más descriptivos. "infomonials", o "test-..." 
+        para testimonials, no es muy claro. Parece que están testeando cosas. "fixthing" es otra clase
+        que deberían renombrar. Revisar esos detalles. -->
+
 <body>
 <!-- Header -->
         <header>
                 <nav>
-         <img src="img/logo-tp.png" width="67px"/>
+                <img src="img/logo-tp.png" width="67px"/>
                  <label for="openmenu"><span class="mobcerrado">&#9776;</span></label>
                                 <input type="checkbox" id="openmenu"/></input>
                  <div class=mobmenu> <div id="menu">
@@ -26,6 +30,9 @@
                               <a href=#team>Team</a>
                                 <div class="druno"><span class="decodes colorun">Drop Down  <i class="fas fa-angle-down"></i></span>
                                  <div class="dropuno">
+                                   <!-- Quedaron raros los estilos de este dropdown
+                                              Revisenlos porque les falta un poco de padding arriba y abajo, 
+                                        especialmente donde dice Drop Down 2, porque está muy pegado al de arriba -->
                                    <a href="#">Drop Down 1</a>
                                     <div class="drdos"><span class="decodes colordo">Drop Down 2 <i class="fas fa-angle-down"></i></span>
                                         <div class="dropdos">
@@ -52,6 +59,8 @@
                         <img src="img/intro-img.svg" alt="img-intro">
                 </div>
                 <div class="intro-info">
+                        <!-- No usen <br>. Acomoden tamaños y dejen que las cosas
+                                se acomoden solas. El BR no se usa. -->
                         <h2>We provide <br>
                                 <span>solutions</span><br>for your business!</h2>
                         <div class="intro-button">
@@ -64,15 +73,21 @@
 
 <!-- Main contiene todo desde el about us hasta el comienzo del footer.-->
 <main>
-        <section id="about" class="about container">        
+        <section id="about" class="about container">       
+                <!-- El mismo nombre de la clase lo dice. Es un encabezado (<header>). Mejor 
+                        usar algo semántico si es tan claro lo que es. 
+                        Revisar para secciones siguientes. --> 
                 <div class="encabezado">
                         <h2 class="titulo">About Us</h2>
+                        <!-- Esto es un subtítulo. Debería ir un H3 Revisar en secciones siguientes -->
                         <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit,sed do eiusdmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="subcontainer-principal">
                         <div class="container-img">
                                 <img src="img/about-img.svg" alt="img-about">    
                         </div>
+                        <!-- Dado que lo anterior es un header, esto podría ser un article. Y el h3 podría ser
+                                un h4 ya que el subtítulo debería ser un h3. Revisar en secciones siguientes -->
                         <div class="container-subcontainer">
                                 <div>
                                         <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -230,7 +245,8 @@
                                 <p>Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
                                 <a href="#">Read more</a>        
                         </div>
-                
+                <!-- acá podría ser una subsección para determinar qué estamos viendo. Sino con tanto
+                        div y span se pierde un poco la distinción con lo anterior -->
                 <div class="content">
                         <div class="content-num">
                                 <span>274</span>
@@ -477,6 +493,8 @@
                                         <img src="img/team-01.jpg" />
                                         <div class="hovblu">
                                                 <h4>Ben Affleck</h4>
+                                                <!-- Esto también es un subtítulo, aún si después no hay 
+                                                                más contenido.h5 -->
                                                 <span>Chief Executive Officer</span>
                                                 <div>
                                                         <i class="fab fa-twitter"></i>
@@ -571,6 +589,7 @@
                                 </div>
                                 <div>
                                         <div class="infomapa">
+                                                <!-- <address> -->
                                                 <div class="iconotextomapa">
                                                         <i class="ion-ios-location-outline dataicon"></i>
                                                         <span class="datacontacto">Adam Street, NY 535022</span>
@@ -594,7 +613,7 @@
                                                 <button  class="button button-msj" type="submit">Send Message</button>
                                         </form>
                                 </div>
-                        </div>
+                         </div>
                 </div>
 
         </section>  
@@ -616,6 +635,7 @@
                 </div>
                 <div class="contact">
                         <h4>CONTACT US</h4>
+                        <!-- Address -->
                         <p>A108 Adam Street</br>New York, NY 535022</br>United States</br>Phone: +1 5589 55488 55</br>Email: info@example.com</p>
                         <div class="icons-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>

@@ -1,5 +1,11 @@
 @import 'mixins.scss';
 @import 'variables.scss';
+/*
+    Todos estos componentes y secciones deberían ser llamados desde el "main.scss"
+    El archivo "all" es un shortcut para traer todos los archivos de una carpeta.
+    Entonces podrían tener un all para components, y un all para sections, y los 3 all
+    se llamarían desde main.scss.
+*/
 @import '../components/buttons';
 @import '../components/texts';
 @import '../components/cards';
