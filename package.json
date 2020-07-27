@@ -1,0 +1,19 @@
+{
+  "name": "tp1-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ciervos/TP1-Landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ciervos/TP1-Landing/issues"
+  },
+  "homepage": "https://github.com/Ciervos/TP1-Landing#readme"
+}

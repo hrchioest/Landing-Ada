@@ -1,18 +1,16 @@
 .container{
     padding: 50px 0px;
 
-    .encabezado{
+    header{
         width: 42%;
         margin: auto;
         text-align: center;
         &.full{
             width: 100%;
         }
-    
     }
-
 }
-
+// Nombre de clase a corregir
 .fixthing{
     width: 100%;
     margin: auto;

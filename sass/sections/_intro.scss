@@ -1,83 +1,76 @@
-.intro{
-    background: $azulmed;
+.intro {
+  background: $azulmed;
+  width: 100%;
+  padding-top: 129px;
+
+  .container-intro {
     width: 100%;
-    padding-top: 129px;
+    margin: auto;
 
-    .container-intro{
-        width: 100%;
-        margin: auto;
-    
-        .intro-img{
-            height: auto;
-            width: 80%;
-            margin: auto;
-            img{
-                max-width:100%;
-            }          
-        }
-        .intro-info{
-            
-            h2{
-                font-size: 34px;
-                line-height: 1.2;
-                color: white;
-                margin: auto;
-                box-sizing: border-box;
-                text-align: center;
-                padding-bottom: 40px;
-                font-family: $titulos;
-      
-                span{
-                    text-decoration-line: underline;
-                    color:$celeste;
-                }
-            }
-            .intro-button{
-                margin: auto;
-                text-align: center;
-                padding-bottom: 50px;     
-                button{
-                    font-size: 14px;
-                    color: white;
-                    line-height: 1.5;
-                    font-weight: 700;
-                    font-family: $parrafos;
-                    letter-spacing: 1px;                   
-                }         
-            }
-                
-        
-        }   
-
+    .intro-img {
+      height: auto;
+      width: 80%;
+      margin: auto;
+      img {
+        max-width: 100%;
+      }
     }
+    .intro-info {
+      h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        color: white;
+        margin: auto;
+        box-sizing: border-box;
+        text-align: center;
+        padding-bottom: 40px;
+        font-family: $titulos;
+
+        span {
+          display: block;
+          text-decoration-line: underline;
+          color: $celeste;
+        }
+      }
+      .intro-button {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 50px;
+        button {
+          font-size: 14px;
+          color: white;
+          line-height: 1.5;
+          font-weight: 700;
+          font-family: $parrafos;
+          letter-spacing: 1px;
+          margin: 10px;
+        }
+      }
+    }
+  }
 }
 
-
-
-
-@include desktop{
-    .intro{
-        padding-top: 200px;
-        .container-intro{
-            max-width: 1115px;
-            width: 85%;
-            display: flex;
-            flex-flow: row-reverse;
-            .intro-img{
-                padding: 0 0 97px 102px;
-                width: 50%;
-            }
-            .intro-info{
-                h2{
-                    font-size: 48px;
-                }
-                h2,.intro-button{
-                    text-align: left;
-                }
-         
-            }
-    
+@include desktop {
+  .intro {
+    padding-top: 200px;
+    .container-intro {
+      max-width: 1115px;
+      width: 85%;
+      display: flex;
+      flex-flow: row-reverse;
+      .intro-img {
+        padding: 0 0 97px 102px;
+        width: 50%;
+      }
+      .intro-info {
+        h2 {
+          font-size: 48px;
         }
+        h2,
+        .intro-button {
+          text-align: left;
+        }
+      }
     }
-    
+  }
 }
