@@ -211,13 +211,18 @@ header nav label .fas {
 }
 header nav #openmenu {
   display: none;
-  /* &:checked .mobcerrado  { display: none; } &:checked .fas { display: inline-block; }*/
 }
 header nav #openmenu:checked + .mobmenu {
   width: 260px;
 }
 header nav #openmenu:checked ~ .mobburger {
   display: block;
+}
+header nav .dropuno {
+  padding: 6px 2px 5px 1px;
+}
+header nav .drdos {
+  margin-top: 4px;
 }
 header nav #menu {
   margin: 0 30px 0 20px;
@@ -237,7 +242,7 @@ header nav #menu .dropdos {
 }
 @media (min-width: 990px) {
   header nav #menu .dropuno,
-  header nav #menu .dropdos {
+header nav #menu .dropdos {
     background-color: white;
     box-shadow: 1px 1px 2px gray;
     transition: all 2s linear;
@@ -542,7 +547,7 @@ header nav a .fas {
     font-size: 48px;
   }
   .intro .container-intro .intro-info h2,
-  .intro .container-intro .intro-info .intro-button {
+.intro .container-intro .intro-info .intro-button {
     text-align: left;
   }
 }
@@ -701,8 +706,7 @@ header nav a .fas {
 .whychoose {
   background: #004a99;
 }
-.whychoose .titulo,
-.whychoose .parrafo {
+.whychoose .titulo, .whychoose .parrafo {
   color: white;
   line-height: 1.2;
 }
@@ -1132,8 +1136,7 @@ footer .container-copycredi div {
   footer .content-general .subcribe p {
     padding: 0px 12px 0 0;
   }
-  footer .content-general .subcribe,
-  footer .content-general .contact {
+  footer .content-general .subcribe, footer .content-general .contact {
     max-width: 25%;
   }
 }
@@ -1141,10 +1144,7 @@ body {
   margin: 0px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
