@@ -30,7 +30,7 @@ header {
     background-color: rgba(19, 39, 57, 0.8);
     padding: 60px 0 0 0px;
     text-align: left;
-    transition: width 0.5s linear;
+    // transition: width 0.5s linear;
     overflow: auto;
     z-index: 299;
 
@@ -76,7 +76,7 @@ header {
       .fas {
         color: white;
         display: none;
-        transition: all 0.2 linear;
+        // transition: all 0.2 linear;
       }
     }
     #openmenu {
@@ -89,11 +89,9 @@ header {
         display: block;
       }
     }
-    .dropuno {
-      padding: 6px 2px 5px 1px;
-    }
+
     .drdos {
-      margin-top: 4px;
+      margin: 4px 0px 5px 0px;
     }
     #menu {
       margin: 0 30px 0 20px;
@@ -105,56 +103,60 @@ header {
         margin: 30px 50px;
       }
 
-      .dropuno,
+      .dropdown-uno,
+      .drdos,
       .dropdos {
         display: none;
         @include desktop {
           background-color: white;
           box-shadow: 1px 1px 2px gray;
-          transition: all 2s linear;
+          // transition: all 2s linear;
         }
       }
 
-      .druno:hover .dropuno {
-        display: flex;
+      .dropdown-uno {
         flex-direction: column;
-        padding-left: 20px;
+        padding: 6px 1px 5px 0px;
         @include desktop {
           position: relative;
-          padding-left: 5px;
-          width: 130px;
+          padding-left: 0px;
+          width: 131px;
+          margin: 4px;
         }
       }
-      .druno:hover .colorun {
+
+      .content-drop:hover .dropdow,
+      .content-drop:hover i {
         color: $celeste;
       }
 
-      .drdos:hover .dropdos {
+      .dropdos {
         display: flex;
         flex-direction: column;
         padding-left: 25px;
         @include desktop {
           position: absolute;
-          left: 135px;
-          top: 25px;
+          top: 76px;
           width: 140px;
-          padding-left: 10px;
+          padding: 12px 0px 3px 6px;
+          right: 16px;
         }
       }
     }
-    .drdos:hover .colordo {
+    .drdos:hover .colordo,
+    .drdos:hover i {
       color: $celeste;
     }
 
-    .decodes {
+    .dropdow {
       font-family: $parrafos;
       color: white;
       font-size: 16px;
-      transition: display 1s linear;
+      padding: 4px;
 
       @include desktop {
         color: $azulosc;
-        margin-left: 14px;
+        margin-left: 8px;
       }
     }
 
@@ -173,7 +175,7 @@ header {
 
       @include desktop {
         color: $azulosc;
-        margin: 0 15px 7px 15px;
+        margin: 0 15px 7px 12px;
       }
     }
   }

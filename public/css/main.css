@@ -158,7 +158,6 @@ header .mobmenu {
   background-color: rgba(19, 39, 57, 0.8);
   padding: 60px 0 0 0px;
   text-align: left;
-  transition: width 0.5s linear;
   overflow: auto;
   z-index: 299;
 }
@@ -207,17 +206,18 @@ header nav label .mobcerrado {
 header nav label .fas {
   color: white;
   display: none;
-  transition: all 0.2 linear;
 }
 header nav #openmenu {
   display: none;
-  /* &:checked .mobcerrado  { display: none; } &:checked .fas { display: inline-block; }*/
 }
 header nav #openmenu:checked + .mobmenu {
   width: 260px;
 }
 header nav #openmenu:checked ~ .mobburger {
   display: block;
+}
+header nav .drdos {
+  margin: 4px 0px 5px 0px;
 }
 header nav #menu {
   margin: 0 30px 0 20px;
@@ -231,60 +231,63 @@ header nav #menu {
     margin: 30px 50px;
   }
 }
-header nav #menu .dropuno,
+header nav #menu .dropdown-uno,
+header nav #menu .drdos,
 header nav #menu .dropdos {
   display: none;
 }
 @media (min-width: 990px) {
-  header nav #menu .dropuno,
-  header nav #menu .dropdos {
+  header nav #menu .dropdown-uno,
+header nav #menu .drdos,
+header nav #menu .dropdos {
     background-color: white;
     box-shadow: 1px 1px 2px gray;
-    transition: all 2s linear;
   }
 }
-header nav #menu .druno:hover .dropuno {
-  display: flex;
+header nav #menu .dropdown-uno {
   flex-direction: column;
-  padding-left: 20px;
+  padding: 6px 1px 5px 0px;
 }
 @media (min-width: 990px) {
-  header nav #menu .druno:hover .dropuno {
+  header nav #menu .dropdown-uno {
     position: relative;
-    padding-left: 5px;
-    width: 130px;
+    padding-left: 0px;
+    width: 131px;
+    margin: 4px;
   }
 }
-header nav #menu .druno:hover .colorun {
+header nav #menu .content-drop:hover .dropdow,
+header nav #menu .content-drop:hover i {
   color: #74b5fc;
 }
-header nav #menu .drdos:hover .dropdos {
+header nav #menu .dropdos {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
 }
 @media (min-width: 990px) {
-  header nav #menu .drdos:hover .dropdos {
+  header nav #menu .dropdos {
     position: absolute;
-    left: 135px;
-    top: 25px;
+    top: 76px;
     width: 140px;
-    padding-left: 10px;
+    padding: 12px 0px 3px 6px;
+    right: 16px;
   }
 }
-header nav .drdos:hover .colordo {
+header nav .drdos:hover .colordo,
+header nav .drdos:hover i {
   color: #74b5fc;
 }
-header nav .decodes {
+header nav .dropdow {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 16px;
-  transition: display 1s linear;
+  padding: 4px;
 }
 @media (min-width: 990px) {
-  header nav .decodes {
+  header nav .dropdow {
     color: #00428a;
-    margin-left: 14px;
+    margin-left: 8px;
   }
 }
 header nav a {
@@ -303,7 +306,7 @@ header nav a .fas {
 @media (min-width: 990px) {
   header nav a {
     color: #00428a;
-    margin: 0 15px 7px 15px;
+    margin: 0 15px 7px 12px;
   }
 }
 
@@ -542,7 +545,7 @@ header nav a .fas {
     font-size: 48px;
   }
   .intro .container-intro .intro-info h2,
-  .intro .container-intro .intro-info .intro-button {
+.intro .container-intro .intro-info .intro-button {
     text-align: left;
   }
 }
@@ -701,8 +704,7 @@ header nav a .fas {
 .whychoose {
   background: #004a99;
 }
-.whychoose .titulo,
-.whychoose .parrafo {
+.whychoose .titulo, .whychoose .parrafo {
   color: white;
   line-height: 1.2;
 }
@@ -1132,8 +1134,7 @@ footer .container-copycredi div {
   footer .content-general .subcribe p {
     padding: 0px 12px 0 0;
   }
-  footer .content-general .subcribe,
-  footer .content-general .contact {
+  footer .content-general .subcribe, footer .content-general .contact {
     max-width: 25%;
   }
 }
@@ -1141,10 +1142,7 @@ body {
   margin: 0px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
