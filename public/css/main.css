@@ -242,7 +242,14 @@ header nav #menu .drdos,
 header nav #menu .dropdos {
     background-color: white;
     box-shadow: 1px 1px 2px gray;
+    transition: all 2s linear;
   }
+}
+header nav #menu .js-dropdown-uno.active {
+  display: block;
+}
+header nav #menu .js-dropdown-tres.active {
+  display: block;
 }
 header nav #menu .dropdown-uno {
   flex-direction: column;

@@ -3,8 +3,9 @@ const dropdownUno = document.querySelector(".js-dropdown-uno");
 const dropdownDos = document.querySelector(".js-dropdown-dos");
 const dropdownTres = document.querySelector(".js-dropdown-tres");
 dropdown.addEventListener("click", (event) => {
-  dropdownUno.setAttribute("style", "display:flex");
+  dropdownUno.classList.toggle("active");
 });
+
 dropdownDos.addEventListener("click", (event) => {
-  dropdownTres.setAttribute("style", "display:block");
+  dropdownTres.classList.toggle("active");
 });
