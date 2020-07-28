@@ -22,7 +22,7 @@
                 <nav>
                         <img src="img/logo-tp.png" width="67px" />
                         <!--Menú en mobile & hamburguesa-->
-                        <label for="openmenu">
+                        <label class="openmenu" for="openmenu">
                                 <span class="mobcerrado">&#9776;</span>
                         </label>
                         <input type="checkbox" id="openmenu" /></input>
@@ -34,38 +34,33 @@
                                         <a href=#services>Services</a>
                                         <a href=#port>Portfolio</a>
                                         <a href=#team>Team</a>
-                                        <ul class="dropdow-principal">
-                                                <li class="js-dropdown content-drop">
-                                                        <span class="dropdow">Drop Down</span>
-                                                        <i class="fas fa-angle-down"></i>
-                                                </li>
-
+                                        <div class="dropdow-principal">
+                                                <div class="js-dropdown content-drop">
+                                                        <span class="dropdow">Drop Down <i
+                                                                        class="fas fa-angle-down"></i></span>
+                                                </div>
 
                                                 <ul class="js-dropdown-uno dropdown-uno">
                                                         <li><a href="#">Drop Down 1</a></li>
 
-                                                        <li class="js-dropdown-dos chevron-color">
-                                                                <span class=" dropdow colordo">Drop Down
-                                                                        2</span>
-                                                                <i class="fas fa-angle-down"></i>
-                                                                <ul class="js-dropdown-tres drdos">
-                                                                        <div class="dropdos">
-                                                                                <li>Deep Down 1</li>
-                                                                                <li>Deep Down 2</li>
-                                                                                <li>Deep Down 3</li>
-                                                                                <li>Deep Down 4</li>
-                                                                                <li>Deep Down 5</li>
-                                                                        </div>
-
+                                                        <li class="js-dropdown-dos dropdown-dos">
+                                                                <span class="dropdow">Drop Down 2<i
+                                                                                class="fas fa-angle-down"></i></span>
+                                                                <ul class="js-deepdown deepdown">
+                                                                        <li><a href="#">Deep Down 1</a></li>
+                                                                        <li><a href="#">Deep Down 2</a></li>
+                                                                        <li><a href="#">Deep Down 3</a></li>
+                                                                        <li><a href="#">Deep Down 4</a></li>
+                                                                        <li><a href="#">Deep Down 5</a></li>
                                                                 </ul>
                                                         </li>
-
                                                 </ul>
 
+                                        </div>
 
-
-                                        </ul>
                                         <a href=#contact>Contact Us</a>
+
+
                                 </div>
                         </div>
                         <div class=mobburger></div>
