@@ -144,7 +144,7 @@ header .mobburger {
   height: 100vh;
   opacity: 0.7;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header .mobburger {
     display: none;
   }
@@ -158,11 +158,10 @@ header .mobmenu {
   background-color: rgba(19, 39, 57, 0.8);
   padding: 60px 0 0 0px;
   text-align: left;
-  transition: width 0.5s linear;
   overflow: auto;
   z-index: 299;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header .mobmenu {
     width: 100%;
     height: 70px;
@@ -183,7 +182,7 @@ header nav {
   width: 100%;
   z-index: 90;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header nav {
     line-height: 20px;
   }
@@ -199,19 +198,17 @@ header nav label .mobcerrado {
   position: relative;
   font-size: 27px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header nav label .mobcerrado {
     display: none;
   }
 }
 header nav label .fas {
   color: white;
-  display: none;
   transition: all 0.2 linear;
 }
 header nav #openmenu {
   display: none;
-  /* &:checked .mobcerrado  { display: none; } &:checked .fas { display: inline-block; }*/
 }
 header nav #openmenu:checked + .mobmenu {
   width: 260px;
@@ -219,72 +216,95 @@ header nav #openmenu:checked + .mobmenu {
 header nav #openmenu:checked ~ .mobburger {
   display: block;
 }
+header nav ul,
+header nav li {
+  list-style: none;
+  margin-bottom: 4px;
+}
+header nav .dropdown-principal {
+  margin: 0px;
+  padding-left: 0px;
+}
 header nav #menu {
   margin: 0 30px 0 20px;
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header nav #menu {
     flex-direction: row;
     justify-content: flex-end;
     margin: 30px 50px;
   }
 }
-header nav #menu .dropuno,
-header nav #menu .dropdos {
+header nav #menu .dropdown-uno,
+header nav #menu .deepdown {
   display: none;
 }
-@media (min-width: 990px) {
-  header nav #menu .dropuno,
-  header nav #menu .dropdos {
+@media (min-width: 770px) {
+  header nav #menu .dropdown-uno,
+header nav #menu .deepdown {
     background-color: white;
     box-shadow: 1px 1px 2px gray;
     transition: all 2s linear;
   }
 }
-header nav #menu .druno:hover .dropuno {
+header nav #menu .js-dropdown-uno.active {
   display: flex;
-  flex-direction: column;
-  padding-left: 20px;
 }
-@media (min-width: 990px) {
-  header nav #menu .druno:hover .dropuno {
+header nav #menu .js-deepdown.active {
+  display: block;
+}
+header nav #menu .dropdown-uno {
+  flex-direction: column;
+}
+@media (min-width: 770px) {
+  header nav #menu .dropdown-uno {
     position: relative;
-    padding-left: 5px;
-    width: 130px;
+    padding: 6px 1px 5px 0px;
+    width: 133px;
+    margin: 4px;
   }
 }
-header nav #menu .druno:hover .colorun {
+header nav #menu .deepdown {
+  flex-direction: column;
+  padding: 6px 1px 5px 0px;
+}
+header nav #menu .content-drop {
+  padding-right: 4px;
+}
+header nav #menu .content-drop:hover .dropdow,
+header nav #menu .content-drop:hover i {
   color: #74b5fc;
 }
-header nav #menu .drdos:hover .dropdos {
+header nav #menu .dropdown-tres {
+  margin: 4px 0px 5px 0px;
   display: flex;
   flex-direction: column;
   padding-left: 25px;
 }
-@media (min-width: 990px) {
-  header nav #menu .drdos:hover .dropdos {
+@media (min-width: 770px) {
+  header nav #menu .dropdown-tres {
     position: absolute;
-    left: 135px;
-    top: 25px;
+    top: 76px;
     width: 140px;
-    padding-left: 10px;
+    padding: 12px 0px 3px 6px;
+    right: 16px;
   }
 }
-header nav .drdos:hover .colordo {
-  color: #74b5fc;
+header nav i {
+  padding-left: 8px;
 }
-header nav .decodes {
+header nav .dropdow {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 16px;
-  transition: display 1s linear;
 }
-@media (min-width: 990px) {
-  header nav .decodes {
+@media (min-width: 770px) {
+  header nav .dropdow {
     color: #00428a;
-    margin-left: 14px;
+    margin-left: 8px;
+    padding: 4px;
   }
 }
 header nav a {
@@ -300,10 +320,10 @@ header nav a:hover {
 header nav a .fas {
   font-size: 18px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   header nav a {
     color: #00428a;
-    margin: 0 15px 7px 15px;
+    margin: 0 15px 7px 12px;
   }
 }
 
@@ -315,12 +335,12 @@ header nav a .fas {
   margin: auto;
   text-align: center;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .testi .test-contenido {
     width: 42%;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .testi .monials {
     height: 180px;
     width: 610px;
@@ -400,7 +420,7 @@ header nav a .fas {
 .team .batman img {
   width: 100%;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .team .batman {
     width: 210px;
     height: 210px;
@@ -449,7 +469,7 @@ header nav a .fas {
   margin-left: auto;
   max-width: 720px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .clientescont {
     max-width: 1100px;
     padding: auto;
@@ -464,7 +484,7 @@ header nav a .fas {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .clientescont .clientes {
     max-width: 600px;
   }
@@ -524,7 +544,7 @@ header nav a .fas {
   margin: 10px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .intro {
     padding-top: 200px;
   }
@@ -542,7 +562,7 @@ header nav a .fas {
     font-size: 48px;
   }
   .intro .container-intro .intro-info h2,
-  .intro .container-intro .intro-info .intro-button {
+.intro .container-intro .intro-info .intro-button {
     text-align: left;
   }
 }
@@ -620,7 +640,7 @@ header nav a .fas {
   color: #444;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .about {
     width: 90%;
     margin: auto;
@@ -688,7 +708,7 @@ header nav a .fas {
   color: #444;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .services .contenedor-services .contenedor-box {
     display: flex;
     width: 80%;
@@ -701,8 +721,7 @@ header nav a .fas {
 .whychoose {
   background: #004a99;
 }
-.whychoose .titulo,
-.whychoose .parrafo {
+.whychoose .titulo, .whychoose .parrafo {
   color: white;
   line-height: 1.2;
 }
@@ -773,7 +792,7 @@ header nav a .fas {
   font-family: "Open Sans", sans-serif;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .whychoose .contenedor-card {
     display: flex;
     flex-wrap: wrap;
@@ -879,7 +898,7 @@ header nav a .fas {
   visibility: visible;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .portafolio .cont-cards {
     width: 90%;
     display: flex;
@@ -910,7 +929,7 @@ header nav a .fas {
   width: 95%;
   margin: 5px 0px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .formcontact .contactform {
     margin: 5px 10px;
   }
@@ -924,7 +943,7 @@ header nav a .fas {
   width: 100%;
   height: 300px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .mapacont {
     width: 60%;
   }
@@ -941,7 +960,7 @@ header nav a .fas {
   justify-content: space-evenly;
   text-align: initial;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .infomapa {
     flex-flow: row nowrap;
   }
@@ -953,13 +972,13 @@ header nav a .fas {
   width: 200px;
   padding: 10px 0 20px 0;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .infomapa .iconotextomapa {
     padding: 10px 0 20px 15px;
   }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .contactglobal {
     display: flex;
     flex-direction: row;
@@ -974,7 +993,7 @@ header nav a .fas {
   width: 100%;
   margin: auto;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   .nameyemail {
     width: 99%;
     display: flex;
@@ -1024,7 +1043,7 @@ footer .content-general .useful a {
   font-family: "Open Sans", sans-serif;
   padding-bottom: 15px;
 }
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   footer .content-general .useful a:hover {
     color: #74b5fc;
     transition: 0.5s;
@@ -1108,7 +1127,7 @@ footer .container-copycredi div {
   color: #f1f7ff;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
   footer .content-general {
     display: flex;
     width: 85%;
@@ -1132,8 +1151,7 @@ footer .container-copycredi div {
   footer .content-general .subcribe p {
     padding: 0px 12px 0 0;
   }
-  footer .content-general .subcribe,
-  footer .content-general .contact {
+  footer .content-general .subcribe, footer .content-general .contact {
     max-width: 25%;
   }
 }
@@ -1141,10 +1159,7 @@ body {
   margin: 0px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
